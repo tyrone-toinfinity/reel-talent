@@ -30,6 +30,41 @@ const LandingPage = () => {
           position. They took care of everything from sourcing to closing, and
           the whole process was seamless and stress-free. Highly recommend!"
         </p>
+        <cite>Kim Peterson, HR Manager at XYZ Company</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          "Reel Talent connected me with the perfect job opportunity and made
+          the whole process seamless and stress-free. I couldn't be happier with
+          the outcome and would highly recommend them to anyone looking for a
+          new job!"
+        </p>
+        <cite>Rick Zoolander, HR Manager at XYZ Company</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          "I had been searching for a job for months before turning to Reel
+          Talent. Within weeks, they had found me the perfect position and I
+          couldn't be happier. Their professionalism and personalized approach
+          made all the difference."
+        </p>
+        <cite>Taylor Austin, HR Manager at XYZ Company</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          "The team at Reel Talent is truly top-notch. They were able to
+          understand my career goals and find me a job that not only met but
+          exceeded my expectations. I highly recommend their services."
+        </p>
+        <cite>Mike Lee, HR Manager at XYZ Company</cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          "Reel Talent not only helped me find a new job, but also helped me
+          improve my resume and interview skills. They truly care about their
+          clients and go above and beyond to ensure their success. Thank you
+          Reel Talent!"
+        </p>
         <cite>Jane Smith, HR Manager at XYZ Company</cite>
       </blockquote>
       <button>Contact Us</button>
