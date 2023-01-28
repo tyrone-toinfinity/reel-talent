@@ -1,12 +1,13 @@
 import "./LandingPage.css";
 import React from "react";
+import businessMeeting from "../assets/images/bussiness-meeting.jpg";
 
 const LandingPage = () => {
   return (
     <section>
       <h1>Connecting Real Talent with Real Careers</h1>
       <img
-        src="src/assets/images/bussiness-meeting.jpg"
+        src={businessMeeting}
         alt="Successful candidates finding new job opportunities"
       />
       <p>
@@ -67,7 +68,9 @@ const LandingPage = () => {
         </p>
         <cite>Jane Smith, HR Manager at XYZ Company</cite>
       </blockquote>
-      <button>Contact Us</button>
+      <a href="mailto:nick@reeltalent.com?subject=Contact Us&cc=bobby@reeltalent.com&body=Hello">
+        <button>Contact Us</button>
+      </a>
     </section>
   );
 };
