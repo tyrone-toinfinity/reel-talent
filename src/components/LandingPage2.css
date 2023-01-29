@@ -17,7 +17,8 @@
 .landing-page-headings {
   font-weight: 400;
   color: #1a4c5f;
-  margin: 0 2rem;
+  margin: 1rem 2rem;
+  line-height: 62px;
 }
 .landing-page-pg {
   color: #2c4c5e;
@@ -27,6 +28,7 @@
 .image-section {
   position: relative;
   overflow: hidden;
+  height: 800px;
 }
 .text-section {
   display: flex;
@@ -41,15 +43,30 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
+/* scroll image  */
+.fade-in-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.in-view {
+  opacity: 1;
+}
+
+/* mobile */
+
+@media (max-width: 720px) {
   .row {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .text-section,
   .image-section {
-    flex: 1;
+    width: 100%;
   }
 }
