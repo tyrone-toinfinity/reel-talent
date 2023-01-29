@@ -7,7 +7,10 @@ export const Navbar = () => {
   return (
     <nav>
       <div className="logo-container">
-        <img src={logo} alt="Logo" />
+        <Link to={"/"}>
+          {" "}
+          <img src={logo} className="logo" alt="Logo" />
+        </Link>
       </div>
       <ul>
         <li>

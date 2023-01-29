@@ -1,0 +1,55 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.text-section {
+  background-color: white;
+}
+.landing-page-headings {
+  font-weight: 400;
+  color: #1a4c5f;
+  margin: 0 2rem;
+}
+.landing-page-pg {
+  color: #2c4c5e;
+  margin: 0 2rem;
+}
+
+.image-section {
+  position: relative;
+  overflow: hidden;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aspect-ratio-3-4 {
+  aspect-ratio: 3/4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .text-section,
+  .image-section {
+    flex: 1;
+  }
+}
