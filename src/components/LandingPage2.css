@@ -47,16 +47,24 @@
 }
 
 /* scroll image  */
-.fade-in-image {
-  position: absolute;
+.inactive-class {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
-
-.in-view {
+.active-class {
   opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
 }
 
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 /* mobile */
 
 @media (max-width: 720px) {
