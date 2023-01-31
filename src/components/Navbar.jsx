@@ -1,17 +1,26 @@
+// CSS
 import "./Navbar.css";
+// Package
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+// Assets
 import logo from "../assets/svg/reeltalent-logo.svg";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav>
       <div className="logo-container">
-        <Link to={"/"}>
-          {" "}
-          <img src={logo} className="logo" alt="Logo" />
-        </Link>
-        <h1>Reel talent</h1>
+        <img
+          onClick={() => navigate("/")}
+          src={logo}
+          className="logo"
+          alt="Logo"
+        />
+
+        <h3 className="nav___Title" onClick={() => navigate("/")}>
+          Reel Talent
+        </h3>
       </div>
       <ul>
         <li>

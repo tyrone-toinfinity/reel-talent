@@ -7,9 +7,31 @@ nav {
   border-bottom: 1px solid lightgray;
 }
 
-nav img {
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
   height: 40px;
-  margin-right: 1rem;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.nav___Title {
+  white-space: nowrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
@@ -23,26 +45,13 @@ nav li {
   margin-right: 1rem;
 }
 
-nav .Nav__Links {
+.Nav__Links {
   color: black;
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-}
-
-.logo {
-  height: 40px;
-  margin-right: 1rem;
-  transform: scale(1); /* default state */
-  transition: transform 0.3s;
-}
-.logo:hover {
-  cursor: pointer;
-  transform: scale(1.08); /* hover state */
-}
-
-.Nav__Links {
   position: relative;
+  transition: all 0.33s ease-in-out;
 }
 
 .Nav__Links::before {

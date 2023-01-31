@@ -3,7 +3,7 @@ import "./Home.css";
 import { Navbar } from "../../components/Navbar";
 import LandingPage from "../../components/LandingPage";
 import { LandingPage2 } from "../../components/LandingPage2";
-import Footer from "../../components/Footer";
+import { SiteFooter } from "../../components/SiteFooter";
 
 export const Home = ({ scrollToNav, navRef }) => {
   return (
@@ -11,7 +11,7 @@ export const Home = ({ scrollToNav, navRef }) => {
       <Navbar navRef={navRef} />
       {/* <LandingPage /> */}
       <LandingPage2 />
-      <Footer />
+      <SiteFooter />
     </div>
   );
 };
