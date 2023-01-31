@@ -1,8 +1,12 @@
+// CSS
 import "./LandingPage2.css";
-import businessMeeting from "../assets/images/bussiness-meeting.jpg";
+
+// Components
+import { BookingCard } from "./BookingCard";
 import { useSpring, animated } from "react-spring";
 
 // images
+import businessMeeting from "../assets/images/bussiness-meeting.jpg";
 import pl1 from "../assets/images/placeholderimg1.jpeg";
 import pl2 from "../assets/images/placeholderimg2.jpeg";
 import pl3 from "../assets/images/placeholderimg3.jpeg";
@@ -100,6 +104,7 @@ export const LandingPage2 = () => {
           </div>
         </div>
       </div>
+      <BookingCard />
     </div>
   );
 };
