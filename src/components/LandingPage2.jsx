@@ -1,6 +1,6 @@
 import "./LandingPage2.css";
 import businessMeeting from "../assets/images/bussiness-meeting.jpg";
-// import { Waypoint } from "react-waypoint";
+import { useSpring, animated } from "react-spring";
 
 // images
 import pl1 from "../assets/images/placeholderimg1.jpeg";
@@ -9,24 +9,24 @@ import pl3 from "../assets/images/placeholderimg3.jpeg";
 import { useEffect, useRef, useState } from "react";
 
 export const LandingPage2 = () => {
-  const [isActive, setActive] = useState(true); // changed the initial state to true
-  const myRef = useRef();
+  const [scrollY, setScrollY] = useState(0);
+  const image1Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 4}px, 0)`,
+  });
+  const image2Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 2}px, 0)`,
+  });
+  const image3Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
+  });
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActive(true);
-        } else {
-          //   setActive(false);
-        }
-      });
-    });
-    observer.observe(myRef.current);
+    function handleScroll() {
+      setScrollY(window.pageYOffset);
+    }
 
-    return () => {
-      observer.unobserve(myRef.current);
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -47,25 +47,21 @@ export const LandingPage2 = () => {
             </p>
           </div>
           <div class="col image-section">
-            <img
+            <animated.img
               src={pl1}
               alt="First Image"
-              className={`${
-                isActive ? "active-class" : "inactive-class"
-              } aspect-ratio-3-4 `}
-              ref={myRef}
+              className="aspect-ratio-3-4"
+              style={image1Y}
             />
           </div>
         </div>
         <div class="row">
           <div class="col image-section">
-            <img
+            <animated.img
               src={pl2}
-              alt="First Image"
-              className={`${
-                isActive ? "active-class" : "inactive-class"
-              } aspect-ratio-3-4 `}
-              ref={myRef}
+              alt="Second Image"
+              className="aspect-ratio-3-4"
+              style={image2Y}
             />
           </div>
           <div class="col text-section">
@@ -95,13 +91,11 @@ export const LandingPage2 = () => {
             </p>
           </div>
           <div class="col image-section">
-            <img
+            <animated.img
               src={pl3}
-              alt="First Image"
-              className={`${
-                isActive ? "active-class" : "inactive-class"
-              } aspect-ratio-3-4 `}
-              ref={myRef}
+              alt="Second Image"
+              className="aspect-ratio-3-4"
+              style={image3Y}
             />
           </div>
         </div>

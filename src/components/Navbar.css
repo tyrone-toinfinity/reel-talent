@@ -33,9 +33,12 @@ nav .Nav__Links {
 .logo {
   height: 40px;
   margin-right: 1rem;
+  transform: scale(1); /* default state */
+  transition: transform 0.3s;
 }
 .logo:hover {
   cursor: pointer;
+  transform: scale(1.08); /* hover state */
 }
 
 .Nav__Links {

@@ -11,6 +11,7 @@ export const Navbar = () => {
           {" "}
           <img src={logo} className="logo" alt="Logo" />
         </Link>
+        <h1>Reel talent</h1>
       </div>
       <ul>
         <li>

@@ -4,54 +4,52 @@
     <style>
       .cls-1 {
         fill: url(#linear-gradient);
-        opacity: .54;
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: #f29471;
       }
 
       .cls-3 {
-        fill: #ef202f;
+        fill: #fff;
       }
 
       .cls-4 {
-        fill: #e68223;
+        fill: #bf4d33;
       }
 
       .cls-5 {
-        fill: #ff87b3;
+        fill: #e09c6e;
       }
 
       .cls-6 {
-        fill: #71de77;
+        fill: #224002;
       }
 
       .cls-7 {
-        fill: #4ed1d1;
+        fill: #193c40;
       }
 
       .cls-8 {
-        fill: #4da7e8;
+        fill: #2e5802;
       }
     </style>
-    <linearGradient id="linear-gradient" x1="90.14" y1="267.03" x2="404.64" y2="267.03" gradientTransform="translate(-162.06 25.18) rotate(-39.77) scale(1.39 1.67) skewX(-25.74)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#71de77"/>
-      <stop offset="1" stop-color="#ff87b3"/>
+    <linearGradient id="linear-gradient" x1="62.01" y1="248.55" x2="436.91" y2="250.59" gradientTransform="translate(341.66 -89.14) rotate(59.69) skewX(-.63)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e5802" stop-opacity=".6"/>
+      <stop offset=".67" stop-color="#ae7f4a" stop-opacity=".43"/>
+      <stop offset="1" stop-color="#f29471" stop-opacity=".34"/>
     </linearGradient>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
     <g>
-      <rect class="cls-2" width="500" height="500"/>
-      <g>
-        <circle class="cls-3" cx="386.45" cy="190.06" r="55.18"/>
-        <circle class="cls-8" cx="256.86" cy="403.82" r="55.18"/>
-        <circle class="cls-5" cx="387.24" cy="335.92" r="55.18"/>
-        <circle class="cls-6" cx="112.61" cy="190.06" r="55.18"/>
-        <circle class="cls-7" cx="113.4" cy="335.92" r="55.18"/>
-        <circle class="cls-4" cx="251.71" cy="109.18" r="55.18"/>
-        <rect class="cls-1" x="39.5" y="208.07" width="420.17" height="108.8" rx="54.4" ry="54.4" transform="translate(148.91 -85.45) rotate(27.42)"/>
-      </g>
+      <rect class="cls-3" width="500" height="500"/>
+      <rect class="cls-1" x="194.96" y="43.27" width="109.51" height="412.17" rx="54.44" ry="54.44" transform="translate(-91.09 340.94) rotate(-60)"/>
+      <circle class="cls-5" cx="380.45" cy="174.06" r="55.18"/>
+      <circle class="cls-6" cx="249.86" cy="401.82" r="55.18"/>
+      <circle class="cls-2" cx="380.24" cy="324.92" r="55.18"/>
+      <circle class="cls-8" cx="118.61" cy="174.06" r="55.18"/>
+      <circle class="cls-7" cx="118.4" cy="324.92" r="55.18"/>
+      <circle class="cls-4" cx="249.71" cy="97.18" r="55.18"/>
     </g>
   </g>
 </svg>
