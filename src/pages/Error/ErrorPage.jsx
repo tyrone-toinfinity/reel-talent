@@ -1,11 +1,11 @@
 // CSS
 import "./ErrorPage.css";
 // Components
-import { SiteFooter } from "../../components/SiteFooter";
 import { Navbar } from "../../components/Navbar";
+import { BookingCard } from "../../components/BookingCard";
+import { SiteFooter } from "../../components/SiteFooter";
 // Packages
 import { Link, useNavigate } from "react-router-dom";
-import { BookingCard } from "../../components/BookingCard";
 
 export const ErrorPage = () => {
   const navigate = useNavigate();

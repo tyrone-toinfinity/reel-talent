@@ -1,9 +1,12 @@
+// CSS
 import "./App.css";
+// Components
 import { Home } from "./pages/Home/Home";
 import { ErrorPage } from "./pages/Error/ErrorPage";
+import { Demo } from "./pages/Demo/Demo";
+// Packages
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useRef } from "react";
-import { Book } from "./pages/Book/Book";
 
 export const App = () => {
   const navRef = useRef();
@@ -17,10 +20,9 @@ export const App = () => {
           element={<Home navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
         <Route
-          path="/book"
-          element={<Book navRef={navRef} scrollToNav={scrollToNav} />}
+          path="/demo"
+          element={<Demo navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
-
         <Route
           path="404"
           element={<ErrorPage navRef={navRef} scrollToNav={scrollToNav} />}
