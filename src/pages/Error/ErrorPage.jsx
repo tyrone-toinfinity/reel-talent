@@ -5,6 +5,7 @@ import { SiteFooter } from "../../components/SiteFooter";
 import { Navbar } from "../../components/Navbar";
 // Packages
 import { Link, useNavigate } from "react-router-dom";
+import { BookingCard } from "../../components/BookingCard";
 
 export const ErrorPage = () => {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ export const ErrorPage = () => {
           Return Home
         </button>
       </div>
+      <BookingCard />
       <SiteFooter />
     </div>
   );

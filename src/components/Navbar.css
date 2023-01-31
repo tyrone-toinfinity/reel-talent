@@ -26,6 +26,7 @@ nav {
 
 .nav___Title {
   white-space: nowrap;
+  cursor: pointer;
 }
 
 h1 {
@@ -52,6 +53,7 @@ nav li {
   border-radius: 0.25rem;
   position: relative;
   transition: all 0.33s ease-in-out;
+  cursor: pointer;
 }
 
 .Nav__Links::before {

@@ -3,6 +3,7 @@ import { Home } from "./pages/Home/Home";
 import { ErrorPage } from "./pages/Error/ErrorPage";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useRef } from "react";
+import { Book } from "./pages/Book/Book";
 
 export const App = () => {
   const navRef = useRef();
@@ -15,18 +16,11 @@ export const App = () => {
           path="/"
           element={<Home navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
-        {/* <Route
-          path="/shop"
-          element={<Shop navRef={navRef} scrollToNav={scrollToNav} />}
-        ></Route>
         <Route
-          path="/cart"
-          element={<Cart navRef={navRef} scrollToNav={scrollToNav} />}
+          path="/book"
+          element={<Book navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
-        <Route
-          path="/support"
-          element={<Support navRef={navRef} scrollToNav={scrollToNav} />}
-        ></Route> */}
+
         <Route
           path="404"
           element={<ErrorPage navRef={navRef} scrollToNav={scrollToNav} />}

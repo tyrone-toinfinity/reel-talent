@@ -23,30 +23,11 @@ export const Navbar = () => {
         </h3>
       </div>
       <ul>
-        <li>
-          <Link className="Nav__Links" to="/">
-            Home
-          </Link>
+        <li className="Nav__Links" onClick={() => navigate("/")}>
+          Home
         </li>
-        <li>
-          <Link className="Nav__Links" to="/about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link className="Nav__Links" to="/services">
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link className="Nav__Links" to="/testimonials">
-            Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link className="Nav__Links" to="/contact">
-            Contact
-          </Link>
+        <li className="Nav__Links" onClick={() => navigate("/book")}>
+          Contact
         </li>
       </ul>
     </nav>

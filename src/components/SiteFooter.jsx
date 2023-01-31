@@ -11,9 +11,9 @@ export const SiteFooter = () => {
         <Link to="/terms-and-conditions">Terms and Conditions</Link>
         <Link to="/privacy-policy">Privacy Policy</Link>
       </div>
-      <button className="back-to-top" onClick={() => window.scrollTo(0, 0)}>
+      {/* <button className="back-to-top" onClick={() => window.scrollTo(0, 0)}>
         Back to Top
-      </button>
+      </button> */}
     </footer>
   );
 };

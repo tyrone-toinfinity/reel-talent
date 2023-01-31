@@ -1,8 +1,8 @@
 footer {
-  background-color: #1a4c5f;
+  background-color: #bf4d33;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .footer-links {
@@ -17,9 +17,10 @@ footer {
 }
 
 .back-to-top {
-  background-color: #ccc;
-  color: #000;
+  background-color: #193c40;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
+  border-radius: 0.25rem;
   border: none;
   cursor: pointer;
   margin-top: 10px;
