@@ -5,8 +5,8 @@ nav {
   padding: 1rem 2rem;
   background-color: #fff;
   box-shadow: 0 0 30px rgba(21, 55, 44, 0.1);
-  position: fixed;
-  width: 100%;
+  /* position: fixed;
+  width: 100%; */
 }
 
 .logo-container {
