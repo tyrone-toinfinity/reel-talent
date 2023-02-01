@@ -50,8 +50,10 @@ export const Demo = () => {
             reach out within 24 business hours.
           </p>
         </div>
-
-        <Calendly />
+        <div className="calendly__container">
+          {" "}
+          <Calendly />
+        </div>
 
         {/* Form */}
         {/* <form onSubmit={handleSubmit}>

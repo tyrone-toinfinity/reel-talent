@@ -1,16 +1,16 @@
 .demo__main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  height: calc(100vh - 120px);
+  align-items: stretch;
+  height: calc(100vh - 70px);
 }
 
 .demo__container {
   width: 50%;
   background-color: #f5f5f5;
-  padding: 4.25rem;
+  padding: 8.25rem 4rem;
   color: #15372c;
+  /* margin: 4rem 0; */
 }
 .demo__title {
   font-size: 3rem;
@@ -35,6 +35,16 @@
 }
 .demo__list > li {
   margin: 1.5rem 0;
+}
+.calendly__container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  /* align-items: center; */
+  /* background-color: #d2ebe5;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+  width: 50%;
 }
 form {
   display: flex;

@@ -2,7 +2,7 @@
 import "./Navbar.css";
 // Package
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // Assets
 import logo from "../assets/svg/reeltalent-logo.svg";
 
@@ -18,18 +18,28 @@ export const Navbar = () => {
           alt="Logo"
         />
 
-        <h3 className="nav___Title" onClick={() => navigate("/")}>
+        {/* <h3 className="nav___title" onClick={() => navigate("/")}>
           Reel Talent
-        </h3>
+        </h3> */}
+        <ul className="nav__link__group">
+          <li className="nav__links" onClick={() => navigate("/")}>
+            Production & solutions
+          </li>
+          <li className="nav__links" onClick={() => navigate("/demo")}>
+            Resources
+          </li>
+          <li className="nav__links" onClick={() => navigate("/demo")}>
+            About us
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li className="Nav__Links" onClick={() => navigate("/")}>
-          Home
-        </li>
-        <li className="Nav__Links" onClick={() => navigate("/book")}>
-          Contact
-        </li>
-      </ul>
+
+      <div className="nav__btns">
+        {" "}
+        <button className="button-22" onClick={() => navigate("/demo")}>
+          Request a demo
+        </button>
+      </div>
     </nav>
   );
 };
