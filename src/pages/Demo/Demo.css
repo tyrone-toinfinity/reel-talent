@@ -39,21 +39,24 @@
 .calendly__container {
   display: flex;
   flex-direction: column;
+  width: 50%;
   /* margin: 4rem 0; */
   /* align-items: center; */
   /* background-color: #d2ebe5;
 
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
-  width: 50%;
+  /* background-color: aqua; */
 }
+.contact__main {
+  background-color: #d2ebe5;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d2ebe5;
-
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 100%;
 }
 
 label {

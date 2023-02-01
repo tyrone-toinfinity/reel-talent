@@ -7,7 +7,19 @@ import { InlineWidget } from "react-calendly";
 export const Calendly = () => {
   return (
     <div>
+      <div>
+        <h2 className="calendly__heading">Book a Demo with Reel Talent</h2>
+        <p className="calendly__pg">
+          Experience the power of Reel Talent in simplifying your recruitment
+          process. Schedule a free, live 1:1 tour with us to see how we can
+          elevate your workforce. Let us know your recruitment challenges and
+          we'll show you how Reel Talent can supercharge your hiring.
+        </p>
+      </div>
       <InlineWidget
+        styles={{
+          height: "1000px",
+        }}
         pageSettings={{
           backgroundColor: "ffffff",
           hideEventTypeDetails: false,

@@ -29,89 +29,108 @@ export const Demo = () => {
   return (
     <div>
       <Navbar />{" "}
-      <div className="demo__main">
-        <div className="demo__container">
-          <h2 className="demo__title">
-            See how Reel Talent can improve your hiring
-          </h2>
-          <p className="demo__pg">
-            From recruiting candidates to onboarding new team members, Reel
-            Talent gives your company everything you need to be great at hiring.
-          </p>
-          <h4 className="demo__booking">Book a session with us to:</h4>
-          <ul className="demo__list">
-            <li className="">Get an overview of the Reel Talent platform</li>
-            <li className="">Discuss your goals with a product expert</li>
-            <li className="">Receieve pricing details based on your needs</li>
-          </ul>
-          <p className="demo__pg">
+      <div>
+        <div className="demo__main">
+          <div className="demo__container">
+            <h2 className="demo__title">
+              See how Reel Talent can improve your hiring
+            </h2>
+            <p className="demo__pg">
+              From recruiting candidates to onboarding new team members, Reel
+              Talent gives your company everything you need to be great at
+              hiring.
+            </p>
+            <h4 className="demo__booking">Book a session with us to:</h4>
+            <ul className="demo__list">
+              <li className="">Get an overview of the Reel Talent platform</li>
+              <li className="">Discuss your goals with a product expert</li>
+              <li className="">Receieve pricing details based on your needs</li>
+            </ul>
+            <p className="demo__pg">
+              {" "}
+              Once you complete the request form, a Reel Talent team member will
+              reach out within 24 business hours.
+            </p>
+          </div>
+          <div className="calendly__container">
             {" "}
-            Once you complete the request form, a Reel Talent team member will
-            reach out within 24 business hours.
-          </p>
-        </div>
-        <div className="calendly__container">
-          {" "}
-          <Calendly />
+            <Calendly />
+          </div>
         </div>
 
-        {/* Form */}
-        {/* <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-            />
+        {/* Contact box */}
+        <section className="contact__main">
+          <div className="contact__container">
+            {" "}
+            <h2 className="contact__heading">Contact us</h2>
+            <p className="contact__pg">
+              Reach out to us at Reel Talent to transform your recruitment
+              process and build a more engaged workforce. With our expertise,
+              accelerate your hiring and connect with the best talent available.
+              Let's work together to build a strong foundation for your
+              company's success.
+            </p>
           </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="companyName">Company Name:</label>
-            <input
-              type="text"
-              id="companyName"
-              name="companyName"
-              value={formData.companyName}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="phoneNumber">Phone Number:</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-            />
-          </div>
-          <button className="button-22" type="submit">
-            Submit
-          </button>
-        </form> */}
+
+          {/* Form */}
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="companyName">Company Name:</label>
+              <input
+                type="text"
+                id="companyName"
+                name="companyName"
+                value={formData.companyName}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="phoneNumber">Phone Number:</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+              />
+            </div>
+            <button className="button-22" type="submit">
+              Submit
+            </button>
+          </form>
+        </section>
+
+        <SiteFooter />
       </div>
-      <SiteFooter />
     </div>
   );
 };
