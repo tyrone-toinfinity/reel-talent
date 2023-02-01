@@ -5,6 +5,7 @@ import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 // Package
 import { useState } from "react";
+import { Calendly } from "../../components/Calendly";
 export const Demo = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -49,7 +50,11 @@ export const Demo = () => {
             reach out within 24 business hours.
           </p>
         </div>
-        <form onSubmit={handleSubmit}>
+
+        <Calendly />
+
+        {/* Form */}
+        {/* <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
             <input
@@ -102,7 +107,7 @@ export const Demo = () => {
           <button className="button-22" type="submit">
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
       <SiteFooter />
     </div>
