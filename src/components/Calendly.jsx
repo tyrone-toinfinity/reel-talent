@@ -6,8 +6,8 @@ import { InlineWidget } from "react-calendly";
 
 export const Calendly = () => {
   return (
-    <div>
-      <div>
+    <div className="calendly__main">
+      <div className="calendly__title">
         <h2 className="calendly__heading">Book a Demo with Reel Talent</h2>
         <p className="calendly__pg">
           Experience the power of Reel Talent in simplifying your recruitment
@@ -21,7 +21,7 @@ export const Calendly = () => {
           height: "1000px",
         }}
         pageSettings={{
-          backgroundColor: "ffffff",
+          backgroundColor: "fff",
           hideEventTypeDetails: false,
           hideLandingPageDetails: false,
           primaryColor: "00a2ff",

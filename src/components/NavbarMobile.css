@@ -1,0 +1,49 @@
+/* hamburger button */
+.hamburger-react,
+.mobile__container,
+.navbar__mobile,
+.nav__btn__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  .hamburger-react,
+  .mobile__container,
+  .navbar__mobile,
+  .nav__btn__mobile {
+    display: block;
+  }
+  .hamburger-react {
+    z-index: 10;
+  }
+  .mobile__container {
+    display: flex;
+  }
+
+  .navbar__mobile {
+    padding-top: 10rem;
+    transition: all ease 1s;
+    background-color: #15372c;
+    z-index: 5;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navbar__mobile > li {
+    flex-direction: column;
+    margin-top: 5rem;
+    display: flex;
+    margin: 0 0 1rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .btn1__nav__mobile {
+    justify-content: center;
+    margin: 1.5rem;
+  }
+}

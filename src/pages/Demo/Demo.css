@@ -7,9 +7,9 @@
 
 .demo__container {
   width: 50%;
-  background-color: #f5f5f5;
+  background-color: #9ae1a1;
   padding: 8.25rem 4rem;
-  color: #15372c;
+  color: #000;
   /* margin: 4rem 0; */
 }
 .demo__title {
@@ -48,7 +48,8 @@
   /* background-color: aqua; */
 }
 .contact__main {
-  background-color: #d2ebe5;
+  background-color: #ffc3b3;
+  color: #fff;
 }
 .contact__container {
   padding: 3rem;
@@ -89,14 +90,6 @@ textarea {
   resize: none;
   display: flex;
 }
-
-/* label,
-input,
-textarea {
-  display: block;
-  margin-bottom: 1em;
-  width: 100%;
-} */
 
 @media (max-width: 720px) {
   .demo__main {

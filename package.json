@@ -1,7 +1,7 @@
 {
   "name": "reel-talent",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,13 +11,13 @@
   "dependencies": {
     "firebase": "^9.16.0",
     "firebase-tools": "^11.21.0",
+    "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-calendly": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
-    "react-spring": "^9.6.1",
-    "react-waypoint": "^10.3.0"
+    "react-spring": "^9.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -13,25 +13,25 @@ import pl3 from "../assets/images/placeholderimg3.jpeg";
 import { useEffect, useRef, useState } from "react";
 
 export const LandingPage2 = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const image1Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 4}px, 0)`,
-  });
-  const image2Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 2}px, 0)`,
-  });
-  const image3Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
-  });
+  // const [scrollY, setScrollY] = useState(0);
+  // const image1Y = useSpring({
+  //   transform: `translate3d(0, ${scrollY / 4}px, 0)`,
+  // });
+  // const image2Y = useSpring({
+  //   transform: `translate3d(0, ${scrollY / 2}px, 0)`,
+  // });
+  // const image3Y = useSpring({
+  //   transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
+  // });
 
-  useEffect(() => {
-    function handleScroll() {
-      setScrollY(window.pageYOffset);
-    }
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     setScrollY(window.pageYOffset);
+  //   }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <div>
@@ -55,7 +55,7 @@ export const LandingPage2 = () => {
               src={pl1}
               alt="First Image"
               className="aspect-ratio-3-4"
-              style={image1Y}
+              // style={image1Y}
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ export const LandingPage2 = () => {
               src={pl2}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              style={image2Y}
+              // style={image2Y}
             />
           </div>
           <div class="col text-section">
@@ -99,7 +99,7 @@ export const LandingPage2 = () => {
               src={pl3}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              style={image3Y}
+              // style={image3Y}
             />
           </div>
         </div>
