@@ -6,43 +6,80 @@ import { useNavigate } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 
 export const NavbarMobile = () => {
-  const navbarRef = useRef();
+  const navbarRef = useRef(null);
   const navigate = useNavigate();
+  const [hamburgerColor, setHamburgerColor] = useState("#222");
+  const [toggled, setToggled] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const handleToggle = (toggled) => {
+    setToggled(toggled);
+    if (toggled) {
+      navbarRef.current.classList.add("navbar__show__mobile");
+      setHamburgerColor("#fff");
+    } else {
+      setOpen(false);
+      navbarRef.current.classList.add("navbar__hide__mobile");
+      setTimeout(() => {
+        navbarRef.current.classList.remove("navbar__show__mobile");
+        navbarRef.current.classList.remove("navbar__hide__mobile");
+      }, 300);
+      setHamburgerColor("#222");
+    }
+  };
+
   return (
     <div>
       <div className="mobile__container">
-        {" "}
-        {/* Mobile */}
         <Hamburger
-          color="#222"
+          color={hamburgerColor}
           label="Show menu"
-          duration={0.3}
-          onToggle={(toggled) => {
-            if (toggled) {
-              // open a menu
-              navbarRef.current.classList.add("navbar__show__mobile");
-              //   navbarRef.current.classList.remove("navbar__hide__mobile");
-            } else {
-              // close a menu
-              navbarRef.current.classList.add("navbar__hide__mobile");
-              setTimeout(() => {
-                navbarRef.current.classList.remove("navbar__show__mobile");
-                navbarRef.current.classList.remove("navbar__hide__mobile");
-              }, 300);
-            }
-          }}
+          duration={0.4}
+          toggled={isOpen}
+          toggle={setOpen}
+          onToggle={handleToggle}
         />
       </div>
       <ul className="navbar__mobile" ref={navbarRef}>
-        <li onClick={() => navigate("/")}>Solutions</li>
-        <li onClick={() => navigate("/")}>Partners</li>
-        <li onClick={() => navigate("/")}>Resources</li>
-        <li onClick={() => navigate("/demo")}>About us</li>
+        <li
+          onClick={() => {
+            handleToggle(!toggled);
+            navigate("/");
+          }}
+        >
+          Solutions
+        </li>
+        <li
+          onClick={() => {
+            handleToggle(!toggled);
+            navigate("/");
+          }}
+        >
+          Partners
+        </li>
+        <li
+          onClick={() => {
+            handleToggle(!toggled);
+            navigate("/");
+          }}
+        >
+          Resources
+        </li>
+        <li
+          onClick={() => {
+            handleToggle(!toggled);
+            navigate("/demo");
+          }}
+        >
+          About us
+        </li>
         <li>
-          {" "}
           <button
             className="btn1 btn1__nav__mobile"
-            onClick={() => navigate("/demo")}
+            onClick={() => {
+              handleToggle(!toggled);
+              navigate("/demo");
+            }}
           >
             Request a demo
           </button>
