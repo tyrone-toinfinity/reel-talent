@@ -7,17 +7,7 @@ import { Twirl as Hamburger } from "hamburger-react";
 
 export const NavbarMobile = () => {
   const navbarRef = useRef();
-
   const navigate = useNavigate();
-
-  const [isOpen, setOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setOpen(!isOpen);
-    navbarRef.current.style.transform = isOpen
-      ? "translateX(200%)"
-      : "translateX(100%)";
-  };
   return (
     <div>
       <div className="mobile__container">
@@ -27,14 +17,23 @@ export const NavbarMobile = () => {
           color="#222"
           label="Show menu"
           duration={0.3}
-          onToggle={toggleNavbar}
+          onToggle={(toggled) => {
+            if (toggled) {
+              // open a menu
+              navbarRef.current.classList.add("navbar__show__mobile");
+              //   navbarRef.current.classList.remove("navbar__hide__mobile");
+            } else {
+              // close a menu
+              navbarRef.current.classList.add("navbar__hide__mobile");
+              setTimeout(() => {
+                navbarRef.current.classList.remove("navbar__show__mobile");
+                navbarRef.current.classList.remove("navbar__hide__mobile");
+              }, 300);
+            }
+          }}
         />
       </div>
-      <ul
-        className="navbar__mobile"
-        ref={navbarRef}
-        style={{ transform: "translateX(200%)" }}
-      >
+      <ul className="navbar__mobile" ref={navbarRef}>
         <li onClick={() => navigate("/")}>Solutions</li>
         <li onClick={() => navigate("/")}>Partners</li>
         <li onClick={() => navigate("/")}>Resources</li>

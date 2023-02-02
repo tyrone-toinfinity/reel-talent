@@ -7,10 +7,7 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .hamburger-react,
-  .mobile__container,
-  .navbar__mobile,
-  .nav__btn__mobile {
+  .hamburger-react {
     display: block;
   }
   .hamburger-react {
@@ -20,18 +17,50 @@
     display: flex;
   }
 
+  /* .navbar__mobile { */
+
+  /* background-color: #15372c; */
+  /* z-index: 5; */
+  /* height: 100vh;
+    width: 50%; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* } */
+
   .navbar__mobile {
     padding-top: 10rem;
-    transition: all ease 1s;
-    background-color: #15372c;
-    z-index: 5;
-    height: 100vh;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* transform: translateX(200%); */
+    /* flex-direction: column; */
+
+    /* flex: 1; */
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    /* font-size: 2rem; */
+    /* background-color: #15372c;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer; */
   }
-  .navbar__mobile > li {
+  .navbar__show__mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #15372c;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0%;
+    animation: scale-in-hor-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .navbar__hide__mobile {
+    animation: scale-out-hor-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+  }
+
+  .navbar__mobile > * {
     flex-direction: column;
     margin-top: 5rem;
     display: flex;
@@ -45,5 +74,32 @@
   .btn1__nav__mobile {
     justify-content: center;
     margin: 1.5rem;
+  }
+}
+
+@keyframes scale-in-hor-right {
+  0% {
+    transform: scaleX(0);
+
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-hor-right {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
