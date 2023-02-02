@@ -4,6 +4,8 @@ import "./NavbarMobile.css";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
+// Assets
+import logo from "../assets/svg/reeltalent-logo-transparent.svg";
 
 export const NavbarMobile = () => {
   const navbarRef = useRef(null);
@@ -41,6 +43,18 @@ export const NavbarMobile = () => {
         />
       </div>
       <ul className="navbar__mobile" ref={navbarRef}>
+        <span className="navbar__mobile__logo">
+          {" "}
+          <img
+            onClick={() => {
+              navigate("/");
+              handleToggle(!toggled);
+            }}
+            src={logo}
+            className="logo__mobile"
+            alt="Logo"
+          />
+        </span>
         <li
           onClick={() => {
             handleToggle(!toggled);

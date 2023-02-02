@@ -39,7 +39,7 @@ export const LandingPage2 = () => {
         <div class="row">
           <div class="col text-section">
             <h1 className="landing-page-headings">
-              Better Hiring Starts with Reel Talent
+              Better hiring starts with Reel Talent
             </h1>
             <p className="landing-page-pg">
               Hiring good people is important for the success of any business.

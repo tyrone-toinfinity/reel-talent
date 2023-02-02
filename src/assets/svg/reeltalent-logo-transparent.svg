@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 372.43 415">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        opacity: .27;
+      }
+
+      .cls-2 {
+        fill: #666;
+      }
+
+      .cls-2, .cls-3 {
+        opacity: .95;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-1.22" y1="206.55" x2="373.69" y2="208.6" gradientTransform="translate(273.65 -55.91) rotate(59.69) skewX(-.63)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".6"/>
+      <stop offset=".16" stop-color="#242424" stop-opacity=".66"/>
+      <stop offset=".53" stop-color="#7f7f7f" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="white">
+    <g>
+      <rect class="cls-1" x="131.74" y="1.27" width="109.51" height="412.17" rx="54.44" ry="54.44" transform="translate(-86.33 265.19) rotate(-60)"/>
+      <circle class="cls-3" cx="317.23" cy="132.06" r="55.18"/>
+      <circle class="cls-3" cx="186.64" cy="359.82" r="55.18"/>
+      <circle class="cls-3" cx="317.02" cy="282.92" r="55.18"/>
+      <circle class="cls-2" cx="55.39" cy="132.06" r="55.18"/>
+      <circle class="cls-3" cx="55.18" cy="282.92" r="55.18"/>
+      <circle class="cls-3" cx="186.49" cy="55.18" r="55.18"/>
+    </g>
+  </g>
+</svg>
