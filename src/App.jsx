@@ -4,7 +4,7 @@ import "./App.css";
 import { Home } from "./pages/Home/Home";
 import { ErrorPage } from "./pages/Error/ErrorPage";
 import { Demo } from "./pages/Demo/Demo";
-// import { SEO } from "./SEO";
+import { SEO } from "./SEO";
 // Packages
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useRef } from "react";
@@ -15,7 +15,7 @@ export const App = () => {
     navRef.current.scrollIntoView({ behavior: "smooth" });
   return (
     <>
-      {/* <SEO /> */}
+      <SEO />
       <div>
         <Routes>
           <Route
