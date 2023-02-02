@@ -1,5 +1,5 @@
 footer {
-  background-color: #15372c;
+  background-color: #16382d;
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -17,7 +17,7 @@ footer {
 }
 
 .back-to-top {
-  background-color: #193c40;
+  background-color: red;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   border-radius: 0.25rem;

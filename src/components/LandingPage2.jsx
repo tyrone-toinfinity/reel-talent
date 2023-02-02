@@ -35,9 +35,9 @@ export const LandingPage2 = () => {
 
   return (
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="col text-section">
+      <div className="container">
+        <div className="row">
+          <div className="col text-section">
             <h1 className="landing-page-headings">
               Better hiring starts with Reel Talent
             </h1>
@@ -50,7 +50,7 @@ export const LandingPage2 = () => {
               possible.
             </p>
           </div>
-          <div class="col image-section">
+          <div className="col image-section">
             <animated.img
               src={pl1}
               alt="First Image"
@@ -59,8 +59,8 @@ export const LandingPage2 = () => {
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col image-section">
+        <div className="row">
+          <div className="col image-section">
             <animated.img
               src={pl2}
               alt="Second Image"
@@ -68,7 +68,7 @@ export const LandingPage2 = () => {
               // style={image2Y}
             />
           </div>
-          <div class="col text-section">
+          <div className="col text-section">
             <h1 className="landing-page-headings">
               Creating a Positive Workplace: The Benefits of Good Hiring
               Practices
@@ -81,8 +81,8 @@ export const LandingPage2 = () => {
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col text-section">
+        <div className="row">
+          <div className="col text-section">
             <h1 className="landing-page-headings">
               Dedicated to Your Success: How Reel Talent Can Help You Hire the
               Right People
@@ -94,7 +94,7 @@ export const LandingPage2 = () => {
               help you find the talent you need to achieve your goals.
             </p>
           </div>
-          <div class="col image-section">
+          <div className="col image-section">
             <animated.img
               src={pl3}
               alt="Second Image"
