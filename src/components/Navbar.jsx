@@ -21,7 +21,7 @@ export const Navbar = () => {
 
         <h3 className="nav__title" onClick={() => navigate("/")}>
           <span className="nav__subtitleReel">Reel</span>{" "}
-          <span class="nav__subtitleTalent">Talent</span>
+          <span className="nav__subtitleTalent">Talent</span>
         </h3>
       </div>
       <ul className="nav__link__group">
