@@ -16,8 +16,8 @@ footer {
   text-decoration: none;
   margin: 0 10px;
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: underline solid 1px;
+  text-underline-offset: 3px;
 }
 .footer__links:hover {
   text-decoration: none;

@@ -74,10 +74,9 @@ export const Legal = () => {
           <h3 className="terms__title">Data Collection </h3>{" "}
           <p className="legal__pg">
             Reel Talent collects personal data from visitors to our website who
-            fill out forms requesting sales information or applying to a job
-            through Greenhouse. The personal data we collect may include but is
-            not limited to your name, email address, telephone number, and
-            resume information.
+            fill out forms requesting sales information. The personal data we
+            collect may include but is not limited to your name, email address,
+            telephone number, and resume information.
           </p>
         </div>
         <div>
