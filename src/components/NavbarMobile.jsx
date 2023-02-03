@@ -43,6 +43,7 @@ export const NavbarMobile = () => {
         />
       </div>
       <ul className="navbar__mobile" ref={navbarRef}>
+        <span className="line-separator" />
         <span className="navbar__mobile__logo">
           {" "}
           <img

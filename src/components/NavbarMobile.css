@@ -18,7 +18,7 @@
   }
 
   .navbar__mobile {
-    padding-top: 10rem;
+    padding-top: 5rem;
     cursor: pointer;
   }
   .navbar__show__mobile {
@@ -64,6 +64,7 @@
     position: absolute;
     top: 5px;
   }
+
   .logo__mobile {
     height: 2.5rem;
     /* margin: 0 0 0 1rem; */
@@ -74,12 +75,18 @@
     cursor: pointer;
     transform: scale(1.08);
   }
+
+  /* Keep this line at the bottom to break up other elements in ul */
+  .line-separator {
+    border-top: 1px solid #ccc;
+    margin: 0;
+  }
 }
 
 /* mobile screen */
 @media only screen and (max-width: 768px) {
   .navbar__mobile {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
   .navbar__mobile > * {
     margin: 0 0 0.5rem 3rem;
