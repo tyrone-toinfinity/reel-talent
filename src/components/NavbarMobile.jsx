@@ -3,7 +3,7 @@ import "./NavbarMobile.css";
 // Package
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Twirl as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 // Assets
 import logo from "../assets/svg/reeltalent-logo-transparent.svg";
 

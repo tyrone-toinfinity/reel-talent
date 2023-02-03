@@ -27,15 +27,6 @@ nav {
   transform: scale(1.08);
 }
 
-/* .nav___title {
-  white-space: nowrap;
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #333;
-  text-transform: uppercase;
-  
-} */
-
 .nav__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -137,6 +128,7 @@ nav {
   -webkit-user-select: none;
   touch-action: manipulation;
   font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .btn1:active {

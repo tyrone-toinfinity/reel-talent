@@ -95,6 +95,10 @@
     width: 80%;
     align-self: center;
   }
+  .line-separator {
+    border-top: 1px solid #ccc;
+    margin: 0;
+  }
 }
 /* Animation */
 
