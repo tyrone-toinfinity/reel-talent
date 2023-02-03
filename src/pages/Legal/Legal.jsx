@@ -89,7 +89,7 @@ export const Legal = () => {
           </p>
         </div>
         <div>
-          <h3 className="terms__title">Disclosure of Personal Data</h3>
+          <h3 className="terms__title">Personal Data</h3>
           <p className="legal__pg">
             Reel Talent will not sell, trade or otherwise disclose personal data
             collected from our website to third parties except as necessary to
