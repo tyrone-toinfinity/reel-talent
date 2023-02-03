@@ -31,7 +31,7 @@ export const NavbarMobile = () => {
   };
 
   return (
-    <div>
+    <div className="mobile__main">
       <div className="mobile__container">
         <Hamburger
           color={hamburgerColor}

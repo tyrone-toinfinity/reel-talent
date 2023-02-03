@@ -5,15 +5,22 @@ footer {
   padding: 2rem;
 }
 
-.footer-links {
+.footer__container {
   display: flex;
   justify-content: center;
 }
 
-.footer-links a {
-  color: #fff;
+.footer__links {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   margin: 0 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer__links:hover {
+  text-decoration: none;
 }
 
 .back-to-top {
@@ -24,4 +31,10 @@ footer {
   border: none;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.copyright {
+  margin: 1rem 0 0 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
 }

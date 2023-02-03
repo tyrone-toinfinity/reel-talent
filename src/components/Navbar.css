@@ -140,6 +140,11 @@ nav {
   transition: all ease 0.33s;
 }
 
+/* Mobile Components */
+.NavbarMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   nav {
     display: flex;

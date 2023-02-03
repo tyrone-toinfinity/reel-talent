@@ -1,19 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// CSS
 import "./SiteFooter.css";
+// Package
+import { useNavigate } from "react-router-dom";
 
 export const SiteFooter = () => {
+  const navigate = useNavigate();
   return (
     <footer>
-      <div className="footer-links">
-        <Link to="/about">About Us</Link>
-        <Link to="/services">Our Services</Link>
-        <Link to="/terms-and-conditions">Terms and Conditions</Link>
-        <Link to="/privacy-policy">Privacy Policy</Link>
+      <ul className="footer__container">
+        <li className="footer__links" onClick={() => navigate("/")}>
+          About Us
+        </li>
+        <li className="footer__links" onClick={() => navigate("/")}>
+          Our Services
+        </li>
+        <li className="footer__links" onClick={() => navigate("/legal")}>
+          Terms and Conditions
+        </li>
+        <li className="footer__links" onClick={() => navigate("/")}>
+          Privacy Policy
+        </li>
+      </ul>
+      <div className="copyright">
+        &copy; {new Date().getFullYear()} Reel Talent. All rights reserved.
       </div>
-      {/* <button className="back-to-top" onClick={() => window.scrollTo(0, 0)}>
-        Back to Top
-      </button> */}
     </footer>
   );
 };

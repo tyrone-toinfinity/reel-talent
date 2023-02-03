@@ -2,12 +2,14 @@
 .hamburger-react,
 .mobile__container,
 .navbar__mobile,
+.mobile__main,
 .nav__btn__mobile {
   display: none;
 }
 
 @media only screen and (max-width: 1080px) {
-  .hamburger-react {
+  .hamburger-react,
+  .mobile__main {
     display: block;
   }
   .hamburger-react {

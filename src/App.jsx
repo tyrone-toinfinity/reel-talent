@@ -4,6 +4,7 @@ import "./App.css";
 import { Home } from "./pages/Home/Home";
 import { ErrorPage } from "./pages/Error/ErrorPage";
 import { Demo } from "./pages/Demo/Demo";
+import { Legal } from "./pages/Legal/Legal";
 import { SEO } from "./SEO";
 // Packages
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -25,6 +26,10 @@ export const App = () => {
           <Route
             path="/demo"
             element={<Demo navRef={navRef} scrollToNav={scrollToNav} />}
+          ></Route>
+          <Route
+            path="/legal"
+            element={<Legal navRef={navRef} scrollToNav={scrollToNav} />}
           ></Route>
           <Route
             path="404"

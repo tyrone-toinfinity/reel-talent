@@ -1,0 +1,35 @@
+.legal__container {
+  max-width: 80rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.terms__title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.legal__pg {
+  margin-bottom: 1.5rem;
+}
+
+.legal__img__container {
+  display: block;
+  position: relative;
+}
+
+.legal__text {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5d5d5d;
+  text-align: center;
+}
