@@ -1,19 +1,16 @@
-// Import the functions you need from the SDKs you need
+// App Init
 import { initializeApp } from "firebase/app";
 // Analytics
 import { getAnalytics } from "firebase/analytics";
 // Database Firebase
 import { getDatabase, ref, set } from "firebase/database";
 
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+//Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDnXUnucMzBtgYnSPBKUv4S2acxyCi8Tkk",
   authDomain: "reel-talent-5ef72.firebaseapp.com",
-  databaseURL: "https://reel-talent-5ef72.firebaseio.com",
   projectId: "reel-talent-5ef72",
+  databaseURL: "https://reel-talent-5ef72-default-rtdb.firebaseio.com/",
   storageBucket: "reel-talent-5ef72.appspot.com",
   messagingSenderId: "80043393311",
   appId: "1:80043393311:web:43f2be04b4bbe841a0702a",
@@ -23,6 +20,10 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
+export const database = getDatabase(app);
+// Create a new reference
+
+// export const blogRef = database.ref();
 
 function writerUserDate(userId, name, email, imageUrl) {
   const db = getDatabase();
@@ -35,4 +36,6 @@ function writerUserDate(userId, name, email, imageUrl) {
   });
 }
 
-writerUserDate("BobbyToday", "Tyrone", "bobby@reeltalent.us", "myimg");
+writerUserDate("BobbyToday", "Tyrone", "updatedbobby@reeltalent.us", "myimg");
+
+console.log(database.ref());

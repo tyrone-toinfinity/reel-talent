@@ -4,6 +4,7 @@ import { ErrorPage } from "./pages/Error/ErrorPage";
 import { Demo } from "./pages/Demo/Demo";
 import { Legal } from "./pages/Legal/Legal";
 import { SEO } from "./SEO";
+import { Blog } from "./pages/Blog/Blog";
 // Packages
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useRef } from "react";
@@ -28,6 +29,10 @@ export const App = () => {
           <Route
             path="/legal"
             element={<Legal navRef={navRef} scrollToNav={scrollToNav} />}
+          ></Route>
+          <Route
+            path="/blog"
+            element={<Blog navRef={navRef} scrollToNav={scrollToNav} />}
           ></Route>
           <Route
             path="404"
