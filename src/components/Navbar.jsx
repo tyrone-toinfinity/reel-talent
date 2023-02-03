@@ -25,14 +25,17 @@ export const Navbar = () => {
         </h3>
       </div>
       <ul className="nav__link__group">
-        <li className="nav__links" onClick={() => navigate("/")}>
+        <li className="nav__links" onClick={() => navigate("/solutions")}>
           Solutions
         </li>
-        <li className="nav__links" onClick={() => navigate("/")}>
+        <li className="nav__links" onClick={() => navigate("/partners")}>
           Partners
         </li>
-        <li className="nav__links" onClick={() => navigate("/demo")}>
+        <li className="nav__links" onClick={() => navigate("/resources")}>
           Resources
+        </li>
+        <li className="nav__links" onClick={() => navigate("/blog")}>
+          Blog
         </li>
         <li className="nav__links" onClick={() => navigate("/demo")}>
           About us

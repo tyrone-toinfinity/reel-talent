@@ -1,5 +1,3 @@
-// CSS
-import "./App.css";
 // Components
 import { Home } from "./pages/Home/Home";
 import { ErrorPage } from "./pages/Error/ErrorPage";
