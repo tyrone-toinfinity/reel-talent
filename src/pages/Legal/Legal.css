@@ -1,35 +1,81 @@
-.legal__container {
+.legal__container,
+.privacy__container {
   max-width: 80rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 2em;
+  padding: 0 2rem 2rem 2rem;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1rem;
   line-height: 1.5;
 }
-
+.privacy__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.privacy__container > div {
+  max-width: 500px;
+}
 .terms__title {
   font-size: 1.6em;
-  font-weight: bold;
-  margin-bottom: 1em;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0.33rem;
+  margin-left: 1rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .legal__pg {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  padding: 1rem;
 }
 
 .legal__img__container {
   display: block;
   position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-.legal__text {
+.legal__img__text {
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 42%;
+  left: 14%;
   font-size: 3.5rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  color: #5d5d5d;
+  letter-spacing: 1.5px;
+  color: #3e3e3e;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .privacy__container > div {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .privacy__container > div {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .legal__container {
+    width: 90%;
+  }
+
+  .legal__img__text {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .legal__container {
+    width: 95%;
+  }
+
+  .legal__img__text {
+    font-size: 2.2rem;
+  }
 }

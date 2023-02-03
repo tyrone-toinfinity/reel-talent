@@ -14,10 +14,16 @@ export const SiteFooter = () => {
         <li className="footer__links" onClick={() => navigate("/")}>
           Our Services
         </li>
-        <li className="footer__links" onClick={() => navigate("/legal")}>
+        <li
+          className="footer__links"
+          onClick={() => navigate("/legal#terms__conditions")}
+        >
           Terms and Conditions
         </li>
-        <li className="footer__links" onClick={() => navigate("/")}>
+        <li
+          className="footer__links"
+          onClick={() => navigate("/legal#privacy")}
+        >
           Privacy Policy
         </li>
       </ul>
