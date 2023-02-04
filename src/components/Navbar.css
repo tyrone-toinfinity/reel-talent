@@ -5,7 +5,7 @@ nav {
   box-shadow: 0 0 30px rgba(21, 55, 44, 0.1);
   z-index: 100;
   background-color: #fff;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -14,7 +14,6 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
-
   max-width: 90rem;
   width: 100%;
 }

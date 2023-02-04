@@ -35,18 +35,25 @@
   display: block;
   position: relative;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: -3% auto 0;
+  max-height: 80rem;
+  align-items: center;
 }
 
 .legal__img__text {
   position: absolute;
   top: 42%;
-  left: 14%;
+  left: 10%;
   font-size: 3.5rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   color: #3e3e3e;
   text-align: center;
+}
+.legal__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1200px) {

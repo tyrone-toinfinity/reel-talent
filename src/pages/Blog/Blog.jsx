@@ -20,7 +20,7 @@ const hardcodedData = [
   },
   {
     id: 2,
-    title: "Secon Blog Post",
+    title: "Second Blog Post",
     body: "This is the second blog post",
     author: "John Doe",
     published_date: "2022-01-01",
@@ -55,24 +55,20 @@ export const Blog = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
-      <h2>Blog Posts</h2>
-      <ul>
-        {hardcodedData.map((post) => (
-          <li key={post.id}>
-            <Link
-              to={{
-                pathname: `/blog/${post.title}`,
-                state: { post },
-              }}
-            >
-              {post.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {/* <Outlet /> */}
+      <section className="blog__main">
+        <h2>Blog Posts</h2>
+        <ul>
+          {hardcodedData.map((post) => (
+            <li key={post.id}>
+              <Link to={`/blog/${post.id}`} state={post}>
+                {post.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      {/* <ul>
+        {/* <ul>
         {hardcodedData.map((post) => (
           <li
             key={post.id}
@@ -84,7 +80,7 @@ export const Blog = () => {
         ))} 
       </ul>*/}
 
-      {/* <ul>
+        {/* <ul>
         {posts.map((post) => (
           <li key={post.id}>
             <a
@@ -99,6 +95,7 @@ export const Blog = () => {
           </li>
         ))}
       </ul> */}
+      </section>
       <SiteFooter />
     </div>
   );

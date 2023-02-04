@@ -9,7 +9,7 @@ import { Legal } from "../../pages/Legal/Legal";
 import { ErrorPage } from "../../pages/Error/ErrorPage";
 
 // Packages
-import { Route, Routes, Navigate, Link } from "react-router-dom";
+import { Route, Navigate } from "react-router-dom";
 
 export const routes = [
   {
