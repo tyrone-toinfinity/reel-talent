@@ -2,7 +2,7 @@
 import "./NavbarMobile.css";
 // Package
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
 // Assets
 import logo from "../assets/svg/reeltalent-logo-transparent.svg";
@@ -43,13 +43,12 @@ export const NavbarMobile = () => {
           onToggle={handleToggle}
         />
       </div>
-      <ul className="navbar__mobile" ref={navbarRef}>
+      <d className="navbar__mobile" ref={navbarRef}>
         <span className="line-separator" />
         <span className="navbar__mobile__logo">
           {" "}
           <img
             onClick={() => {
-              navigate("/");
               handleToggle(!toggled);
             }}
             src={logo}
@@ -60,34 +59,47 @@ export const NavbarMobile = () => {
         <li
           onClick={() => {
             handleToggle(!toggled);
-            navigate("/");
           }}
         >
-          Solutions
+          <Link to="/" onClick={() => handleToggle(!toggled)}>
+            Solutions
+          </Link>
         </li>
         <li
           onClick={() => {
             handleToggle(!toggled);
-            navigate("/");
           }}
         >
-          Partners
+          <Link to="/" onClick={() => handleToggle(!toggled)}>
+            Partners
+          </Link>
         </li>
         <li
           onClick={() => {
             handleToggle(!toggled);
-            navigate("/");
           }}
         >
-          Resources
+          <Link to="/" onClick={() => handleToggle(!toggled)}>
+            Resources
+          </Link>
         </li>
         <li
           onClick={() => {
             handleToggle(!toggled);
-            navigate("/demo");
           }}
         >
-          About us
+          <Link to="/blog" onClick={() => handleToggle(!toggled)}>
+            Blog
+          </Link>
+        </li>
+        <li
+          onClick={() => {
+            handleToggle(!toggled);
+          }}
+        >
+          <Link to="/demo" onClick={() => handleToggle(!toggled)}>
+            About us
+          </Link>
         </li>
         <li>
           <button
@@ -100,7 +112,7 @@ export const NavbarMobile = () => {
             Request a demo
           </button>
         </li>
-      </ul>
+      </d>
     </div>
   );
 };
