@@ -3,14 +3,13 @@ import { initializeApp } from "firebase/app";
 // Analytics
 import { getAnalytics } from "firebase/analytics";
 // Database Firebase
-import { getDatabase, ref, set } from "firebase/database";
+import { getFirestore, collection, getDoc } from "firebase/firestore";
 
 //Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDnXUnucMzBtgYnSPBKUv4S2acxyCi8Tkk",
   authDomain: "reel-talent-5ef72.firebaseapp.com",
   projectId: "reel-talent-5ef72",
-  databaseURL: "https://reel-talent-5ef72-default-rtdb.firebaseio.com/",
   storageBucket: "reel-talent-5ef72.appspot.com",
   messagingSenderId: "80043393311",
   appId: "1:80043393311:web:43f2be04b4bbe841a0702a",
@@ -20,22 +19,35 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
-export const database = getDatabase(app);
-// Create a new reference
 
+const db = getFirestore();
 // export const blogRef = database.ref();
 
-function writerUserDate(userId, name, email, imageUrl) {
-  const db = getDatabase();
-  const reference = ref(db, "users/" + userId);
+const postCol = collection(db, "posts");
+console.log(postCol);
+// getDoc(postCol).then((snapShot) => {
+//   console.log(snapShot);
+// });
 
-  set(reference, {
-    username: name,
-    email: email,
-    profile_picutre: imageUrl,
-  });
-}
+// const blogRef = db.collection("posts");
 
-writerUserDate("BobbyToday", "Tyrone", "updatedbobby@reeltalent.us", "myimg");
+// blogRef.get().then((snapshot) => {
+//   snapshot.forEach((doc) => {
+//     console.log(doc.id, "=>", doc.data());
+//   });
+// });
 
-console.log(database.ref());
+// export const database = getDatabase(app);
+
+// function writerUserDate(userId, name, email, imageUrl) {
+//   const db = getDatabase();
+//   const reference = ref(db, "users/" + userId);
+
+//   set(reference, {
+//     username: name,
+//     email: email,
+//     profile_picutre: imageUrl,
+//   });
+// }
+
+// writerUserDate("BobbyToday", "Tyrone", "updatedbobby@reeltalent.us", "myimg");

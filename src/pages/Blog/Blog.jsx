@@ -3,8 +3,8 @@ import "./Blog.css";
 // Components
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
-import { ref } from "firebase/database";
-import { database } from "../../firebaseConfig";
+// import { ref } from "firebase/database";
+// import { database } from "../../firebaseConfig";
 
 // Packages
 import { useState, useEffect } from "react";
