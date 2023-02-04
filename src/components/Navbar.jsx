@@ -11,44 +11,46 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <div className="logo__container">
-        <img
-          onClick={() => navigate("/")}
-          src={logo}
-          className="logo"
-          alt="Logo"
-        />
+      <section className="nav__container">
+        <div className="logo__container">
+          <img
+            onClick={() => navigate("/")}
+            src={logo}
+            className="logo"
+            alt="Logo"
+          />
 
-        <h3 className="nav__title" onClick={() => navigate("/")}>
-          <span className="nav__subtitleReel">Reel</span>{" "}
-          <span className="nav__subtitleTalent">Talent</span>
-        </h3>
-      </div>
-      <ul className="nav__link__group">
-        <li className="nav__links" onClick={() => navigate("/solutions")}>
-          Solutions
-        </li>
-        <li className="nav__links" onClick={() => navigate("/partners")}>
-          Partners
-        </li>
-        <li className="nav__links" onClick={() => navigate("/resources")}>
-          Resources
-        </li>
-        <li className="nav__links" onClick={() => navigate("/blog")}>
-          Blog
-        </li>
-        <li className="nav__links" onClick={() => navigate("/demo")}>
-          About us
-        </li>
-      </ul>
+          <h3 className="nav__title" onClick={() => navigate("/")}>
+            <span className="nav__subtitleReel">Reel</span>{" "}
+            <span className="nav__subtitleTalent">Talent</span>
+          </h3>
+        </div>
+        <ul className="nav__link__group">
+          <li className="nav__links" onClick={() => navigate("/solutions")}>
+            Solutions
+          </li>
+          <li className="nav__links" onClick={() => navigate("/partners")}>
+            Partners
+          </li>
+          <li className="nav__links" onClick={() => navigate("/resources")}>
+            Resources
+          </li>
+          <li className="nav__links" onClick={() => navigate("/blog")}>
+            Blog
+          </li>
+          <li className="nav__links" onClick={() => navigate("/demo")}>
+            About us
+          </li>
+        </ul>
 
-      <div className="nav__btn__desktop">
-        {" "}
-        <button className="btn1" onClick={() => navigate("/demo")}>
-          Request a demo
-        </button>
-      </div>
-      <NavbarMobile />
+        <div className="nav__btn__desktop">
+          {" "}
+          <button className="btn1" onClick={() => navigate("/demo")}>
+            Request a demo
+          </button>
+        </div>
+        <NavbarMobile />
+      </section>
     </nav>
   );
 };

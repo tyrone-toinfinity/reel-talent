@@ -1,45 +1,17 @@
 // Components
-import { Home } from "./pages/Home/Home";
-import { ErrorPage } from "./pages/Error/ErrorPage";
-import { Demo } from "./pages/Demo/Demo";
-import { Legal } from "./pages/Legal/Legal";
+import { routes } from "./setup/routes-manager/Routes";
 import { SEO } from "./SEO";
-import { Blog } from "./pages/Blog/Blog";
 // Packages
-import { Route, Routes, Navigate } from "react-router-dom";
-import { useRef } from "react";
+import { Routes, Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
 
 export const App = () => {
-  const navRef = useRef();
-  const scrollToNav = () =>
-    navRef.current.scrollIntoView({ behavior: "smooth" });
   return (
     <>
       <SEO />
       <div>
-        <Routes>
-          <Route
-            path="/"
-            element={<Home navRef={navRef} scrollToNav={scrollToNav} />}
-          ></Route>
-          <Route
-            path="/demo"
-            element={<Demo navRef={navRef} scrollToNav={scrollToNav} />}
-          ></Route>
-          <Route
-            path="/legal"
-            element={<Legal navRef={navRef} scrollToNav={scrollToNav} />}
-          ></Route>
-          <Route
-            path="/blog"
-            element={<Blog navRef={navRef} scrollToNav={scrollToNav} />}
-          ></Route>
-          <Route
-            path="404"
-            element={<ErrorPage navRef={navRef} scrollToNav={scrollToNav} />}
-          ></Route>
-          <Route path="*" element={<Navigate to="404" />}></Route>
-        </Routes>
+        <Link to="/blog"></Link>
+        <Routes>{routes.map((route) => route.element)}</Routes>
       </div>
     </>
   );

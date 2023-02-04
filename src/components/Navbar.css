@@ -1,12 +1,22 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem 2rem;
-  background-color: #fff;
+  justify-content: center;
   box-shadow: 0 0 30px rgba(21, 55, 44, 0.1);
-  /* position: fixed;
-  width: 100%; */
+  z-index: 100;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+
+  max-width: 90rem;
+  width: 100%;
 }
 
 .logo__container {

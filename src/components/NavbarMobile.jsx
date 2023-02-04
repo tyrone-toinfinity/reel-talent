@@ -37,6 +37,7 @@ export const NavbarMobile = () => {
           color={hamburgerColor}
           label="Show menu"
           duration={0.4}
+          size={24}
           toggled={isOpen}
           toggle={setOpen}
           onToggle={handleToggle}
