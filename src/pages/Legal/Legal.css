@@ -20,8 +20,7 @@
   font-size: 1.6em;
   font-weight: 400;
   color: #222;
-  margin-bottom: 0.33rem;
-  margin-left: 1rem;
+  margin-bottom: 0.1rem;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -29,7 +28,7 @@
   margin-bottom: 0.5rem;
   line-height: 1.7rem;
   font-weight: 300;
-  padding: 1rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .legal__img__container {
@@ -78,8 +77,5 @@
 
   .legal__img__text {
     font-size: 2.2rem;
-  }
-  .legal__pg {
-    padding: 0.25rem 1rem;
   }
 }
