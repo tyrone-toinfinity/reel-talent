@@ -26,6 +26,9 @@
 .blogPost__pg {
   margin-top: 2rem;
   text-align: justify;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  color: rgb(21, 55, 44);
 }
 
 .blogPost__author {
@@ -38,6 +41,11 @@
   margin-top: 2rem;
   text-align: center;
 }
+
+.blogPost__readTime,
 .blogPost__date {
+  text-align: end;
   margin: 1rem 0;
+  color: #3e3e3e;
+  font-size: 0.9rem;
 }

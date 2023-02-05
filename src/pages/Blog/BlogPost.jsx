@@ -1,12 +1,8 @@
-// CSS
 import "./BlogPost.css";
 // Component
 import { Link, useParams, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
-
-//Package
-// import readingTime from "reading-time";
 
 export const BlogPost = () => {
   const { id } = useParams();
@@ -20,9 +16,11 @@ export const BlogPost = () => {
     day: "numeric",
     year: "numeric",
   });
-
-  // const readingTimeResult = readingTime(post.body);
-  // const readingTimeInMinutes = readingTimeResult.text;
+  // Calculate Reading Time
+  const words = post.body.split(" ").length;
+  const readingSpeed = 250; // 250 words per minute
+  const readingTimeInMinutes = Math.ceil(words / readingSpeed);
+  // const readingTimeInSeconds = readingTimeInMinutes * 60;
 
   return (
     <div>
@@ -36,11 +34,17 @@ export const BlogPost = () => {
             alt={post.title}
           />
         </div>
+        <p className="blogPost__readTime">
+          {`${readingTimeInMinutes} ${
+            readingTimeInMinutes === 1 ? "min" : "mins"
+          }`}{" "}
+          read time
+        </p>
+        <p className="blogPost__date">{formattedDate}</p>
 
         <p className="blogPost__pg">{post.body}</p>
         <p className="blogPost__author">Author: {post.author}</p>
-        {/* <p className="blogPost__read-time">{readTime.text}</p> */}
-        <p className="blogPost__date">{formattedDate}</p>
+
         <Link className="blogPost__back" to={"/blog"}>
           back
         </Link>
