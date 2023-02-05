@@ -17,9 +17,10 @@ export const ErrorPage = () => {
         <p className="error__pg">
           The page you are looking for cannot be found or is unavailable.
         </p>
-        <button className="button-22" onClick={() => navigate("/")}>
-          Return Home
-        </button>
+
+        <Link to="/">
+          <button className="btn1">Return Home</button>
+        </Link>
       </div>
       <BookingCard />
       <SiteFooter />

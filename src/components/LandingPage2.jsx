@@ -3,6 +3,7 @@ import "./LandingPage2.css";
 
 // Components
 import { BookingCard } from "./BookingCard";
+import { useSpring, animated } from "react-spring";
 
 // images
 import businessMeeting from "../assets/images/bussiness-meeting.jpg";

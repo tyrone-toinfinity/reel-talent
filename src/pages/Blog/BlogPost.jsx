@@ -35,7 +35,7 @@ export const BlogPost = () => {
           />
         </div>
         <p className="blogPost__readTime">
-          {`${readingTimeInMinutes} ${
+          {`${readingTimeInMinutes}${
             readingTimeInMinutes === 1 ? "min" : "mins"
           }`}{" "}
           read time

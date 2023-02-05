@@ -41,7 +41,9 @@
   margin-top: 2rem;
   text-align: center;
 }
-
+.blogPost__readTime {
+  letter-spacing: 0px;
+}
 .blogPost__readTime,
 .blogPost__date {
   text-align: end;
