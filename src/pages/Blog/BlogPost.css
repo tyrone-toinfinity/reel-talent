@@ -1,18 +1,21 @@
 .blogPost__main {
-  max-width: 80rem;
   padding: 1rem;
-  margin: 1rem auto;
+  /* background-color: #fcfcfc; */
+  background-image: url(../../assets/images/cream-dust.png);
+}
+.blogPost_wrapper {
+  max-width: 80rem;
+  margin: 2rem auto;
+  /* max-height: 500px; */
 }
 
 .blogPost__header {
-  background-color: #f0f0f0;
-  background-image: url(../../assets/images/cream-dust.png);
   text-align: center;
   padding: 1rem 0 2rem;
 }
 
 .blogPost__header h1 {
-  font-size: 3.5rem;
+  font-size: calc(1.5rem + 1vw);
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -22,7 +25,6 @@
   height: auto;
   display: block;
   margin: 0 auto;
-  /* max-width: 80rem; */
   width: 100%;
   height: auto;
 }
@@ -31,7 +33,7 @@
   margin-top: 2rem;
   text-align: justify;
   line-height: 2rem;
-  font-size: 1.25rem;
+  font-size: calc(1rem + 0.2vw);
   color: rgb(21, 55, 44);
 }
 
