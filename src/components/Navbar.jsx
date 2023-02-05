@@ -11,17 +11,16 @@ export const Navbar = () => {
     <nav>
       <section className="nav__container">
         <div className="logo__container">
-          <img
-            onClick={() => navigate("/")}
-            src={logo}
-            className="logo"
-            alt="Logo"
-          />
+          <Link to="/">
+            <img src={logo} className="logo" alt="Logo" />
+          </Link>
 
-          <h3 className="nav__title" onClick={() => navigate("/")}>
-            <span className="nav__subtitleReel">Reel</span>{" "}
-            <span className="nav__subtitleTalent">Talent</span>
-          </h3>
+          <Link to="/">
+            <h3 className="nav__title">
+              <span className="nav__subtitleReel">Reel</span>{" "}
+              <span className="nav__subtitleTalent">Talent</span>
+            </h3>
+          </Link>
         </div>
         <ul className="nav__link__group">
           <li className="nav__links">

@@ -1,0 +1,43 @@
+.blogPost__main {
+  max-width: 80rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.blogPost__header {
+  background-color: #f0f0f0;
+  background-image: url(../../assets/images/cream-dust.png);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.blogPost__header h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.blogPost__image {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.blogPost__pg {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.blogPost__author {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.blogPost__back {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+.blogPost__date {
+  margin: 1rem 0;
+}
