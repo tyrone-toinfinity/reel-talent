@@ -6,6 +6,10 @@
 }
 .blog__header {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .blog__heading-container {
@@ -30,13 +34,13 @@
 
 .blog__heading3 {
   margin: 1.5rem 0 0;
-  font-size: calc(12px + 1vw);
+  font-size: calc(14px + 1vw);
   font-weight: 400;
 }
 
 .blog__heading4 {
   font-weight: 300;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
   margin: 1rem 0 2rem;
 }
 
@@ -141,7 +145,7 @@
 .blog__heading4 {
   font-size: 1rem;
   font-weight: 300;
-  margin: 1rem 0 3rem;
+  margin: 0.5rem 0 2rem;
 }
 
 @media (max-width: 767px) {
