@@ -23,8 +23,10 @@ export const Blog = () => {
     });
   }, []);
 
-  // const lastElement = posts[posts.length - 1].data();
-
+  // const lastElement = posts[0].data();
+  // console.log(posts[0].data());
+  // const lastElement = posts.length > 0 ? posts[0].data() : {};
+  // console.log(lastElement);
   return (
     <div>
       <Navbar />
