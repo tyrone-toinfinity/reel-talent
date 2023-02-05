@@ -3,6 +3,8 @@ import "./BlogPost.css";
 import { Link, useParams, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
+// Assets
+import { BsChevronLeft } from "react-icons/bs";
 
 export const BlogPost = () => {
   const { id } = useParams();
@@ -12,7 +14,7 @@ export const BlogPost = () => {
   // Date
   const date = new Date(post.published_date);
   const formattedDate = date.toLocaleDateString("en-US", {
-    month: "long",
+    month: "short",
     day: "numeric",
     year: "numeric",
   });
@@ -20,12 +22,15 @@ export const BlogPost = () => {
   const words = post.body.split(" ").length;
   const readingSpeed = 250; // 250 words per minute
   const readingTimeInMinutes = Math.ceil(words / readingSpeed);
-  // const readingTimeInSeconds = readingTimeInMinutes * 60;
 
   return (
     <div>
       <Navbar />
+
       <section className="blogPost__main">
+        <Link className="blogPost__back" to={"/blog"}>
+          <BsChevronLeft /> blog
+        </Link>
         <div className="blogPost__header">
           <h1>{post.title}</h1>
           <img
@@ -41,13 +46,8 @@ export const BlogPost = () => {
           read time
         </p>
         <p className="blogPost__date">{formattedDate}</p>
-
         <p className="blogPost__pg">{post.body}</p>
         <p className="blogPost__author">Author: {post.author}</p>
-
-        <Link className="blogPost__back" to={"/blog"}>
-          back
-        </Link>
       </section>
       <SiteFooter />
     </div>

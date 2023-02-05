@@ -7,7 +7,7 @@ export const BookingCard = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="card">
+      <div className="card__book">
         <h2 className="card__title">Simplify Your Talent Search</h2>
         <p className="card__description">Reel in Top Talent Now</p>
         <button className="card__button" onClick={() => navigate("/demo")}>

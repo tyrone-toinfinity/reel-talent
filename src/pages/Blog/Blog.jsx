@@ -10,6 +10,9 @@ import { collection, getDocs } from "firebase/firestore";
 import { Outlet, Link } from "react-router-dom";
 import { BlogPost } from "./BlogPost";
 
+// Assets
+import paint_strokes from "../../assets/svg/paint_strokes.svg";
+
 const hardcodedData = [
   {
     id: 1,
@@ -23,7 +26,7 @@ const hardcodedData = [
   {
     id: 2,
     title: "The Moon",
-    body: "The Moon is a celestial body that orbits the Earth and is the Earth's only permanent natural satellite. It is the fifth largest moon in the solar system and is approximately one-quarter the size of Earth. The Moon was formed about 4.5 billion years ago, shortly after the formation of the solar system. It is believed to have been created from debris that was left over after a massive impact between Earth and a Mars-sized object. The surface of the Moon is heavily cratered and is covered in a layer of fine dust called regolith. The largest impact crater on the Moon is the South Pole-Aitken Basin, which is over 2,500 km wide and 13 km deep. The Moon's surface is also dotted with large, flat areas known as maria, which are the result of ancient volcanic eruptions. The Moon has a very weak atmosphere, known as an exosphere, which consists of a small amount of gases such as helium and argon. There is no water on the Moon's surface, but there is evidence of frozen water in the shadows of craters near the poles. In 2009, NASA's Lunar CRater Observing and Sensing Satellite (LCROSS) mission confirmed the presence of water on the Moon. The Moon's gravitational pull causes the tides on Earth and also affects the Earth's rotation. The Moon's gravity also creates a phenomenon known as lunar libration, which causes the Moon to appear to wobble slightly as it orbits the Earth. This makes it possible to see slightly more or less of the Moon's far side from Earth. The first humans set foot on the Moon on July 20, 1969, during the Apollo 11 mission. Since then, there have been six manned missions to the Moon, all of which were part of the Apollo program. The last time humans visited the Moon was during the Apollo 17 mission in December 1972. Since the end of the Apollo program, there have been numerous unmanned missions to the Moon, including the Lunar Reconnaissance Orbiter (LRO) and the Chinese Chang'e missions. In recent years, there has been a resurgence of interest in exploring and potentially colonizing the Moon. NASA has plans to send astronauts back to the Moon as part of the Artemis program, and private companies such as SpaceX and Blue Origin have also expressed interest in lunar exploration. Since the end of the Apollo program, there have been numerous unmanned missions to the Moon, including the Lunar Reconnaissance Orbiter (LRO) and the Chinese Chang'e missions. In recent years, there has been a resurgence of interest in exploring and potentially colonizing the Moon. NASA has plans to send astronauts back to the Moon as part of the Artemis program, and private companies such as SpaceX and Blue Origin have also expressed interest in lunar exploration.",
+    body: "The Moon is a celestial body that orbits the Earth to the Moon as part ofte companies such as SpaceX and Blue Origin have also expressed interest in lunar exploration.",
     author: "John Doe",
     published_date: "2022-01-01",
     image_url:
@@ -59,21 +62,72 @@ export const Blog = () => {
   //   });
   // }, [postCol]);
 
+  const lastElement = hardcodedData[hardcodedData.length - 1];
+
+  // Date
+  // Hero date
+  const date = new Date(lastElement.published_date);
+  const formattedDate = date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+
   return (
     <div>
       <Navbar />
       {/* <Outlet /> */}
       <section className="blog__main">
-        <h2>Blog Posts</h2>
-        <ul>
+        <div className="blog__header">
+          {" "}
+          <h3 className="blog__heading3">the reel Blog</h3>
+          <div className="blog__heading-container">
+            <h2 className="blog__heading2">Writings from our team</h2>
+            <img src={paint_strokes} className="paint_strokes" alt="" />
+          </div>
+          <h4 className="blog__heading4">
+            The latest industry news on best hiring practice in action and more
+            on Reel Talent blog.
+          </h4>
+        </div>
+        <Link to={`/blog/${lastElement.title}`} state={lastElement}>
+          <div class="blog__heroContainer">
+            <img
+              className="blog__heroImg"
+              src={lastElement.image_url}
+              alt=""
+              srcset=""
+            />
+            <div class="blog__heroInfo">
+              <div class="blog__date">
+                <span className="blog__author"> {lastElement.author}</span>
+                {formattedDate}
+              </div>
+              <div class="blog__title">{lastElement.title}</div>
+            </div>
+          </div>
+        </Link>
+        <div class="card card__main d-flex flex-wrap">
           {hardcodedData.map((post) => (
-            <li key={post.id}>
+            <div
+              class="card blog__cardContainer col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              key={post.id}
+            >
               <Link to={`/blog/${post.id}`} state={post}>
-                {post.title}
+                <img src={post.image_url} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <span class="card-text"> {post.author} • </span>
+                    <span class="card-text">{post.published_date}</span>
+                  </div>
+                  <h5 class="card-title">{post.title}</h5>
+                  <p class="card-text">{post.body}</p>
+                </div>
               </Link>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
+
         {/* <ul>
           {posts.map((post) => (
             <li key={post.id}>
