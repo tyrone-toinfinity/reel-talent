@@ -11,17 +11,12 @@ export const BlogPost = () => {
   const location = useLocation();
   const post = location.state.post;
   // Date
-  // const date = post.published_date.toDate();
-  // const formattedDate = date.toLocaleDateString("default", {
-  //   month: "short",
-  //   day: "numeric",
-  //   year: "numeric",
-  // });
 
   // Calculate Reading Time
-  // const words = post.body.split(" ").length;
-  // const readingSpeed = 250; // 250 words per minute
-  // const readingTimeInMinutes = Math.ceil(words / readingSpeed);
+  const fullText = post.body.join(" ");
+  const words = fullText.split(" ").length;
+  const readingSpeed = 250; // 250 words per minute
+  const readingTimeInMinutes = Math.ceil(words / readingSpeed);
   return (
     <div>
       <Navbar />
@@ -38,8 +33,23 @@ export const BlogPost = () => {
               src={post.image_url}
               alt={post.title}
             />
+            <div className="blogPost__pg blogPost__readTime">
+              <p>
+                {`${readingTimeInMinutes} ${
+                  readingTimeInMinutes === 1 ? "min" : "mins"
+                }`}{" "}
+                read time
+              </p>
+            </div>
+            <div
+              style={{
+                backgroundColor: "forestgreen",
+                height: "1px",
+                width: "50%",
+                margin: "auto",
+              }}
+            />
           </div>
-          <p className="blogPost__date"></p>
 
           <div className="blogPost__body">
             {post.body.map((para, index) => (
@@ -54,8 +64,18 @@ export const BlogPost = () => {
                 alt="author"
               />
               <span>
-                <Link to={"https://www.linkedin.com/in/bobbywoody/"}>
-                  <p className="blogPost__pg"> {post.author}</p>
+                <Link to={post.linkedin_link} className="blogPost__pg">
+                  <p> {post.author}</p>
+                  <p>
+                    {new Date(
+                      post.published_date.seconds * 1000
+                    ).toLocaleDateString("default", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </p>
+                  <BsLinkedin />
                 </Link>
               </span>
             </div>
@@ -66,12 +86,3 @@ export const BlogPost = () => {
     </div>
   );
 };
-
-{
-  /* <p className="blogPost__readTime">
-          {`${readingTimeInMinutes}${
-            readingTimeInMinutes === 1 ? "min" : "mins"
-          }`}{" "}
-          read time
-        </p> */
-}
