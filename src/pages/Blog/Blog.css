@@ -21,9 +21,9 @@
   display: inline-block;
   vertical-align: middle;
   max-width: 35px;
-  position: absolute;
-  margin-left: -0.7%;
-  margin-top: 0.5%;
+  /* position: absolute; */
+  /* margin-left: -0.7%; */
+  /* margin-top: 0.5%; */
 }
 .blog__heading2 {
   margin: 1rem;

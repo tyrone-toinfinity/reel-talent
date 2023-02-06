@@ -3,15 +3,39 @@ import "./BlogPost.css";
 import { Link, useParams, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
+import { ErrorPage } from "../Error/ErrorPage";
 // Assets
 import { BsChevronLeft, BsLinkedin } from "react-icons/bs";
+// Packages
+import { useState, useEffect } from "react";
+import { Loading } from "../../components/Loading";
 
 export const BlogPost = () => {
-  const { id } = useParams();
   const location = useLocation();
   const post = location.state.post;
-  // Date
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    // Fetch data here
+    if (post.hasOwnProperty("body")) {
+      setIsLoading(false);
+    } else {
+      setIsLoading(false);
+      setError(true);
+    }
+  }, [post]);
 
+  if (isLoading) {
+    return (
+      <>
+        <Loading />
+      </>
+    );
+  }
+
+  if (error) {
+    return <ErrorPage />;
+  }
   // Calculate Reading Time
   const fullText = post.body.join(" ");
   const words = fullText.split(" ").length;
@@ -20,7 +44,6 @@ export const BlogPost = () => {
   return (
     <div>
       <Navbar />
-
       <section className="blogPost__main">
         <div className="blogPost_wrapper">
           <Link className="blogPost__back" to={"/blog"}>
@@ -50,7 +73,6 @@ export const BlogPost = () => {
               }}
             />
           </div>
-
           <div className="blogPost__body">
             {post.body.map((para, index) => (
               <p key={index} className="blogPost__pg">
