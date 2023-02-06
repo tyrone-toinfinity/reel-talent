@@ -34,10 +34,10 @@ export const Blog = () => {
       <section className="blog__main">
         <div className="blog__header">
           {" "}
-          <h3 className="blog__heading3">the reel Blog</h3>
+          <h3 className="blog__heading3">the reel blog</h3>
           <div className="blog__heading-container">
             <h2 className="blog__heading2">Writings from our team</h2>
-            <img src={paint_strokes} className="paint_strokes" alt="" />
+            {/* <img src={paint_strokes} className="paint__strokes" alt="" /> */}
           </div>
           <h4 className="blog__heading4">
             The latest industry news on best hiring practice in action and more
@@ -59,7 +59,7 @@ export const Blog = () => {
         <div class="card card__main">
           {posts.map((post) => (
             <div class="row mb-3 blog__cardContainer" key={post.id}>
-              <div class="col-md-8 listing__description">
+              <div class="col-md-8 col-sm-12 listing__description">
                 <div class="card-body">
                   <Link
                     to={`/blog/${post.data().title}`}
@@ -82,14 +82,14 @@ export const Blog = () => {
                   <p class="card-text post__summary">{post.data().summary}</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-12 align-self-center ">
                 <Link
                   to={`/blog/${post.data().title}`}
                   state={{ post: post.data() }}
                 >
                   <img
                     src={post.data().image_url}
-                    class="card-img-top"
+                    class="card-img-top "
                     alt="..."
                   />
                 </Link>

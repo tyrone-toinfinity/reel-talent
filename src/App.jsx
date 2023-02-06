@@ -6,6 +6,7 @@ import { Routes, Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 
 export const App = () => {
+  const navbarRef = useRef();
   return (
     <>
       <SEO />

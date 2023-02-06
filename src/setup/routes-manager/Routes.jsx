@@ -14,7 +14,7 @@ import { Route, Navigate } from "react-router-dom";
 export const routes = [
   {
     path: "/",
-    element: <Route path="/" element={<Home />} />,
+    element: <Route path="/" element={<Home />} scrollToTop />,
   },
   {
     path: "/demo",
