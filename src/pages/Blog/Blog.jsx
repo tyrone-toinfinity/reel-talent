@@ -40,8 +40,8 @@ export const Blog = () => {
             {/* <img src={paint_strokes} className="paint__strokes" alt="" /> */}
           </div>
           <h4 className="blog__heading4">
-            The latest industry news on best hiring practice in action and more
-            on Reel Talent blog.
+            Stay informed with Reel Talent blog's latest industry news,
+            including best hiring practices.
           </h4>
         </div>
         {/* <Link to={`/blog/${lastElement.title}`} state={lastElement}>
