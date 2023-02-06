@@ -20,10 +20,10 @@
 .paint__strokes {
   display: inline-block;
   vertical-align: middle;
-  max-width: 35px;
-  /* position: absolute; */
-  /* margin-left: -0.7%; */
-  /* margin-top: 0.5%; */
+  /* max-width: 35px; */
+  position: absolute;
+  margin-left: -2.5%;
+  margin-top: 1.5%;
 }
 .blog__heading2 {
   margin: 1rem;
@@ -210,5 +210,15 @@
   }
   .blog__cardContainer {
     padding-bottom: 0rem;
+  }
+  .paint__strokes {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 470px) {
+  .paint__strokes {
+    margin-left: -5%;
+    margin-top: 0%;
   }
 }

@@ -96,10 +96,16 @@
     width: 100%;
     text-align: center;
   }
+  .blogPost__readTime {
+    margin: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .blogPost__body {
     padding: 0 0.5rem;
+  }
+  .blogPost__readTime {
+    margin: 0;
   }
 }

@@ -36,7 +36,12 @@ export const Blog = () => {
           <h3 className="blog__heading3">the reel blog</h3>
           <div className="blog__heading-container">
             <h2 className="blog__heading2">Writings from our team</h2>
-            <img src={paint_strokes} className="paint__strokes" alt="" />
+            <img
+              src={paint_strokes}
+              className="paint__strokes"
+              height={30}
+              alt=""
+            />
           </div>
           <h4 className="blog__heading4">
             Stay informed with Reel Talent blog's latest industry news,
