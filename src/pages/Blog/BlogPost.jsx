@@ -4,7 +4,7 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 // Assets
-import { BsChevronLeft } from "react-icons/bs";
+import { BsChevronLeft, BsLinkedin } from "react-icons/bs";
 
 export const BlogPost = () => {
   const { id } = useParams();
@@ -39,7 +39,6 @@ export const BlogPost = () => {
               alt={post.title}
             />
           </div>
-
           <p className="blogPost__date"></p>
 
           <div className="blogPost__body">
@@ -48,9 +47,19 @@ export const BlogPost = () => {
                 {para}
               </p>
             ))}
+            <div className="author__container">
+              <img
+                className="blogPost__authorImg"
+                src={post.author_image}
+                alt="author"
+              />
+              <span>
+                <Link to={"https://www.linkedin.com/in/bobbywoody/"}>
+                  <p className="blogPost__pg"> {post.author}</p>
+                </Link>
+              </span>
+            </div>
           </div>
-
-          <p className="blogPost__author">Author: {post.author}</p>
         </div>
       </section>
       <SiteFooter />
