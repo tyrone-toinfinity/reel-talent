@@ -7,6 +7,7 @@ import { Blog } from "../../pages/Blog/Blog";
 import { BlogPost } from "../../pages/Blog/BlogPost";
 import { Legal } from "../../pages/Legal/Legal";
 import { ErrorPage } from "../../pages/Error/ErrorPage";
+import { About } from "../../pages/About/About";
 
 // Packages
 import { Route, Navigate } from "react-router-dom";
@@ -19,6 +20,10 @@ export const routes = [
   {
     path: "/demo",
     element: <Route path="/demo" element={<Demo />} />,
+  },
+  {
+    path: "/",
+    element: <Route path="/about" element={<About />} />,
   },
   {
     path: "/legal",

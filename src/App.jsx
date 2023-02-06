@@ -11,7 +11,6 @@ export const App = () => {
     <>
       <SEO />
       <div>
-        <Link to="/blog"></Link>
         <Routes>{routes.map((route) => route.element)}</Routes>
       </div>
     </>
