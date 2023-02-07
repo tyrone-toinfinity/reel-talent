@@ -58,7 +58,7 @@ export const LandingPage = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col image-section">
+          <div className="col image-section image__girl">
             <animated.img
               src={pl2}
               alt="Second Image"

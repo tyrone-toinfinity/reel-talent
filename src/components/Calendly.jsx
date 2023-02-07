@@ -1,4 +1,4 @@
-// Css
+// CSS
 import "./Calendly.css";
 
 // Packages

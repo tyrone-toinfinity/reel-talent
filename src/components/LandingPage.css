@@ -22,7 +22,6 @@
   color: #2c4c5e;
   margin: 0 2rem;
   margin-top: 1rem;
-  text-align: justify;
   line-height: 2rem;
   font-size: calc(1rem + 0.2vw);
   color: rgb(21, 55, 44);
@@ -68,7 +67,7 @@
 }
 /* mobile */
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .row {
     flex-wrap: wrap;
     flex-direction: column;
@@ -77,5 +76,11 @@
   .text-section,
   .image-section {
     width: 100%;
+  }
+  .text-section {
+    margin: 6rem 0 9rem;
+  }
+  .image__girl {
+    order: 1;
   }
 }
