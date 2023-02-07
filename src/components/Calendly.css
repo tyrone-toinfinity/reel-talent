@@ -11,32 +11,16 @@
   margin: 2.5rem 3rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: 27px;
   color: #193c40;
 }
 
 @media (max-width: 768px) {
   .calendly__heading {
-    padding: 1rem;
+    padding: 0rem 2.3rem;
     margin: 0;
+  }
+  .calendly__pg {
+    margin: 1rem 2rem;
   }
 }
-/* 
-@media (max-width: 768px) {
-  .calendly__heading {
-    padding: 1rem;
-    margin: 0;
-  }
-
-  .calendly__main {
-    width: 100%;
-  }
-
-  .calendly__title {
-    width: 100%;
-  }
-
-  .InlineWidget iframe {
-    width: 100% !important;
-  }
-} */

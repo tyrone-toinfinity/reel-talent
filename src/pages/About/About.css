@@ -1,4 +1,4 @@
-.about__page {
+/* .about__page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,39 +28,74 @@
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 1.5rem;
+} */
+
+.about__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+.about__title {
+  font-size: 4rem;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 4rem 0;
+  text-align: center;
 }
 
-/* Card */
-.card__section {
+.about__description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 1.5rem;
+}
+
+.about__img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 33%;
+  border-radius: 50%;
+  border: 10px solid white;
+
+  object-fit: cover;
+}
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 80rem;
+  margin: 2rem auto;
+}
+.about__card {
+  margin: 1rem 0;
+  padding: 2rem;
+  background-color: #f29471;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.card__container {
-  margin: 20px 0;
-  background-color: rgb(203, 222, 222);
-}
-.image {
-  width: 200px;
-}
-
-.card__title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.card__text {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: justify;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  background-image: url("../../assets/images/bedge-grunge.png");
 }
 
 @media (max-width: 768px) {
   .about__description {
+    font-size: 1rem;
+    max-width: 80%;
     margin: 0.5rem 1.5rem;
+  }
+  .about__card {
+    flex-direction: column;
+  }
+  .about__title {
+    font-size: 3rem;
+    padding: 10px;
+    margin: 2rem 0;
+    text-align: center;
   }
 }

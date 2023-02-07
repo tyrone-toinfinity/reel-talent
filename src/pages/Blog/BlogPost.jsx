@@ -80,11 +80,13 @@ export const BlogPost = () => {
               </p>
             ))}
             <div className="author__container">
-              <img
-                className="blogPost__authorImg"
-                src={post.author_image}
-                alt="author"
-              />
+              <Link to={post.linkedin_link}>
+                <img
+                  className="blogPost__authorImg"
+                  src={post.author_image}
+                  alt="author"
+                />
+              </Link>
               <span>
                 <Link to={post.linkedin_link} className="blogPost__pg">
                   <p> {post.author}</p>

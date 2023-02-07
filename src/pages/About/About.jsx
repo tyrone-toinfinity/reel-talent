@@ -1,21 +1,19 @@
 // CSS
 import "./About.css";
-
 // Components
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 // Package
-
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
-
 // Assets
 import water from "../../assets/svg/water-drop.svg";
-
+import Image1 from "../../assets/images/pexels-mizuno-k-12903281.jpg";
+import Image2 from "../../assets/images/pexels-fauxels-3184300.jpg";
+import Image3 from "../../assets/images/pexels-fauxels-3183172.jpg";
 export const About = () => {
   return (
     <>
       <Navbar />
-      <main className="about__page">
+      <section className="about__page">
         <section className="about__section">
           <h1 className="about__title">
             Expertly Connecting Talent with Opportunities
@@ -29,77 +27,37 @@ export const About = () => {
             you'll find the right fit for your organization.
           </p>
         </section>
-        {/* <section className="card__section">
-          <Card className="card__container">
-            <CardImg
-              bottom
-              src={
-                "https://images.unsplash.com/photo-1674897507077-439a36fb581b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              }
-              alt="Card image cap"
-              className="image"
+        <section className="card__section">
+          <div className="about__card">
+            <img src={Image1} alt="Transparency" className="about__img" />
+            <h2 className="card__title ">Transparency</h2>
+            <p className="card__text  about__description">
+              We believe in being transparent in all our dealings with our
+              clients and job seekers.
+            </p>
+          </div>
+          <div className="about__card">
+            <img src={Image2} alt="Efficiency" className="about__img" />
+            <h2 className="card__title ">Efficiency</h2>
+            <p className="card__text  about__description">
+              Our goal is to provide a seamless and efficient hiring process for
+              businesses.
+            </p>
+          </div>
+          <div className="about__card ">
+            <img
+              src={Image3}
+              alt="Finding the Right Fit"
+              className="about__img"
             />
-            <CardBody>
-              <CardTitle className="card__title">Card Title 1</CardTitle>
-              <CardText className="card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-            </CardBody>
-          </Card>
-          <Card className="card__container">
-            <CardImg
-              bottom
-              src={
-                "https://images.unsplash.com/photo-1674897507077-439a36fb581b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              }
-              alt="Card image cap"
-              className="image"
-            />
-            <CardBody>
-              <CardTitle className="card__title">Card Title 2</CardTitle>
-              <CardText className="card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-            </CardBody>
-          </Card>
-          <Card className="card__container">
-            <CardImg
-              bottom
-              src={
-                "https://images.unsplash.com/photo-1674897507077-439a36fb581b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              }
-              alt="Card image cap"
-              className="image"
-            />
-            <CardBody>
-              <CardTitle className="card__title">Card Title 3</CardTitle>
-              <CardText className="card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-            </CardBody>
-          </Card>
-          <Card className="card__container">
-            <CardImg
-              bottom
-              src={
-                "https://images.unsplash.com/photo-1674897507077-439a36fb581b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              }
-              alt="Card image cap"
-              className="image"
-            />
-            <CardBody>
-              <CardTitle className="card__title">Card Title 4</CardTitle>
-              <CardText className="card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-            </CardBody>
-          </Card>
-        </section> */}
-      </main>
+            <h2 className="card__title ">Finding the Right Fit</h2>
+            <p className="card__text about__description">
+              We strive to help businesses find the best talent for their needs,
+              ensuring a good fit for both the company and the job seeker.
+            </p>
+          </div>
+        </section>
+      </section>
       <SiteFooter />
     </>
   );
