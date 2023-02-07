@@ -41,11 +41,15 @@
 .calendly__container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 50%;
 }
 .contact__main {
-  width: 80rem;
+  max-width: 80rem;
   margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #193c40;
 }
 
 .contact__container {
@@ -62,11 +66,10 @@
   margin: 1rem;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
   width: 100%;
   padding: 2rem;
 }
@@ -86,7 +89,7 @@ textarea {
   font-size: 16px;
   resize: none;
   display: flex;
-}
+} */
 
 @media (max-width: 720px) {
   .demo__main {
@@ -94,12 +97,13 @@ textarea {
     flex-direction: column;
   }
 
-  .demo__container {
+  .demo__container,
+  .calendly__container {
     width: 100%;
   }
-
+  /* 
   form {
     width: 100%;
     margin-top: 20px;
-  }
+  } */
 }

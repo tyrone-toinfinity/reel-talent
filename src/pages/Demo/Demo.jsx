@@ -3,29 +3,29 @@ import "./Demo.css";
 // Components
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
-// Package
-import { useState } from "react";
 import { Calendly } from "../../components/Calendly";
+// Packages
+import { useState } from "react";
 export const Demo = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    companyName: "",
-    phoneNumber: "",
-    message: "",
-  });
-  const handleInputChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   companyName: "",
+  //   phoneNumber: "",
+  //   message: "",
+  // });
+  // const handleInputChange = (event) => {
+  //   setFormData({
+  //     ...formData,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   // Perform API call or send form data to server here
+  //   console.log(formData);
+  // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Perform API call or send form data to server here
-    console.log(formData);
-  };
   return (
     <div>
       <Navbar />{" "}
@@ -67,9 +67,9 @@ export const Demo = () => {
             together to build a strong foundation for your company's success.
           </p>
         </div>
-
-        {/* Form */}
-        {/* <form onSubmit={handleSubmit}>
+      </section>
+      {/* Form */}
+      {/* <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">Name:</label>
               <input
@@ -123,7 +123,6 @@ export const Demo = () => {
               Submit
             </button>
           </form> */}
-      </section>
       <SiteFooter />
     </div>
   );

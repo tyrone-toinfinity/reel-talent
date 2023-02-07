@@ -89,7 +89,7 @@ export const NavbarMobile = () => {
             handleToggle(!toggled);
           }}
         >
-          <Link to="/demo" onClick={() => handleToggle(!toggled)}>
+          <Link to="/about" onClick={() => handleToggle(!toggled)}>
             About us
           </Link>
         </li>
