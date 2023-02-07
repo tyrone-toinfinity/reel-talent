@@ -3,19 +3,20 @@
   justify-content: space-between;
   align-items: stretch;
   max-width: 80rem;
+  margin: 0 auto;
   height: calc(100vh - 70px);
 }
 
 .demo__container {
   width: 50%;
-  background-color: #9ae1a1;
-  padding: 8.25rem 4rem;
-  color: #000;
-  /* margin: 4rem 0; */
+  background-color: #205242;
+  margin: 5rem 0;
+  padding: 2rem 2rem;
+  color: #fff;
 }
 .demo__title {
   font-size: 3rem;
-  line-height: 71px;
+  line-height: 4rem;
   text-decoration: none;
   font-weight: 400;
 }
@@ -41,17 +42,12 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  /* margin: 4rem 0; */
-  /* align-items: center; */
-  /* background-color: #d2ebe5;
-
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
-  /* background-color: aqua; */
 }
 .contact__main {
-  background-color: #ffc3b3;
-  color: #fff;
+  width: 80rem;
+  margin: 0 auto;
 }
+
 .contact__container {
   padding: 3rem;
 }
