@@ -18,5 +18,25 @@
 @media (max-width: 768px) {
   .calendly__heading {
     padding: 1rem;
+    margin: 0;
   }
 }
+/* 
+@media (max-width: 768px) {
+  .calendly__heading {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .calendly__main {
+    width: 100%;
+  }
+
+  .calendly__title {
+    width: 100%;
+  }
+
+  .InlineWidget iframe {
+    width: 100% !important;
+  }
+} */

@@ -58,3 +58,9 @@
   line-height: 1.5;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .about__description {
+    margin: 0.5rem 1.5rem;
+  }
+}

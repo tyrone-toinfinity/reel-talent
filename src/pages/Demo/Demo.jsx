@@ -4,8 +4,6 @@ import "./Demo.css";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 import { Calendly } from "../../components/Calendly";
-// Packages
-import { useState } from "react";
 export const Demo = () => {
   return (
     <div>

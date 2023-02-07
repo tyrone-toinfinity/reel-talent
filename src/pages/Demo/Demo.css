@@ -4,7 +4,7 @@
   align-items: stretch;
   max-width: 80rem;
   margin: 0 auto;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
 }
 
 .demo__container {
@@ -74,6 +74,7 @@
 
   .demo__container,
   .calendly__container {
+    max-width: 100%;
     width: 100%;
   }
   .contact__container {

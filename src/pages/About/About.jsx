@@ -17,7 +17,6 @@ export const About = () => {
       <Navbar />
       <main className="about__page">
         <section className="about__section">
-          {/* <div className="about__text"> */}
           <h1 className="about__title">
             Expertly Connecting Talent with Opportunities
           </h1>
@@ -29,7 +28,6 @@ export const About = () => {
             talent for their needs. With Reel Talent, you can rest assured that
             you'll find the right fit for your organization.
           </p>
-          {/* </div> */}
         </section>
         {/* <section className="card__section">
           <Card className="card__container">
