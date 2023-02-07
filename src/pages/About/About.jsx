@@ -17,26 +17,19 @@ export const About = () => {
       <Navbar />
       <main className="about__page">
         <section className="about__section">
-          <div className="about__text">
-            <h1 className="about__title">
-              Expertly Connecting Talent with Opportunities
-            </h1>
-            <p className="about__description">
-              Reel Talent is a recruiting company that aims to make hiring easy
-              for businesses. We believe in transparency and strive to put it at
-              the forefront of everything we do. Our goal is to provide a
-              seamless and efficient hiring process that helps companies find
-              the best talent for their needs. With Reel Talent, you can rest
-              assured that you'll find the right fit for your organization.
-            </p>
-          </div>
-          {/* <div className="about__image">
-            <img
-              src={water}
-              alt="image water rippling in pond"
-              className="water"
-            />
-          </div> */}
+          {/* <div className="about__text"> */}
+          <h1 className="about__title">
+            Expertly Connecting Talent with Opportunities
+          </h1>
+          <p className="about__description">
+            Reel Talent is a recruiting company that aims to make hiring easy
+            for businesses. We believe in transparency and strive to put it at
+            the forefront of everything we do. Our goal is to provide a seamless
+            and efficient hiring process that helps companies find the best
+            talent for their needs. With Reel Talent, you can rest assured that
+            you'll find the right fit for your organization.
+          </p>
+          {/* </div> */}
         </section>
         {/* <section className="card__section">
           <Card className="card__container">

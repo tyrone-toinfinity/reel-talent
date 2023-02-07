@@ -66,7 +66,7 @@
   margin: 1rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .demo__main {
     display: flex;
     flex-direction: column;
@@ -75,5 +75,11 @@
   .demo__container,
   .calendly__container {
     width: 100%;
+  }
+  .contact__container {
+    padding: 2rem 1rem;
+  }
+  .demo__main {
+    display: block;
   }
 }

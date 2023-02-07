@@ -14,16 +14,9 @@
   justify-content: center;
   margin: 2rem 0;
   flex-wrap: wrap;
-  height: 90vh;
+  min-height: 90vh;
 }
 
-.about__text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .about__title {
   font-size: 4rem;
   max-width: 1000px;
@@ -34,6 +27,7 @@
 .about__description {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin: 1.5rem;
 }
 
 /* Card */

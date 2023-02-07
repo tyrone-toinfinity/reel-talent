@@ -14,3 +14,9 @@
   line-height: 1.6rem;
   color: #193c40;
 }
+
+@media (max-width: 768px) {
+  .calendly__heading {
+    padding: 1rem;
+  }
+}
