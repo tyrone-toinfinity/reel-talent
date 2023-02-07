@@ -13,10 +13,9 @@
 
 .landing-page-headings {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 5rem;
   color: rgb(21, 55, 44);
   margin: 1rem 2rem;
-  line-height: 62px;
 }
 .landing-page-pg {
   color: #2c4c5e;
@@ -37,6 +36,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.break__text {
+  height: 200px;
+  background-color: #fef5e6;
 }
 
 .aspect-ratio-3-4 {
@@ -65,8 +69,14 @@
     transition: none;
   }
 }
-/* mobile */
 
+@media (max-width: 1400px) {
+  .landing-page-headings {
+    font-weight: 400;
+    font-size: 4rem;
+  }
+}
+/* mobile */
 @media (max-width: 768px) {
   .row {
     flex-wrap: wrap;
@@ -78,7 +88,7 @@
     width: 100%;
   }
   .text-section {
-    margin: 6rem 0 9rem;
+    margin: 6rem 0 7rem;
   }
   .image__girl {
     order: 1;
