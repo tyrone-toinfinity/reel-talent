@@ -4,11 +4,11 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 import { ErrorPage } from "../Error/ErrorPage";
+import { Loading } from "../../components/Loading";
 // Assets
 import { BsChevronLeft, BsLinkedin } from "react-icons/bs";
 // Packages
 import { useState, useEffect } from "react";
-import { Loading } from "../../components/Loading";
 
 export const BlogPost = () => {
   const location = useLocation();
@@ -97,7 +97,7 @@ export const BlogPost = () => {
                       year: "numeric",
                     })}
                   </p>
-                  <BsLinkedin />
+                  <BsLinkedin className="author__social" />
                 </Link>
               </span>
             </div>

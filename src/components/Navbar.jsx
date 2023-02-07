@@ -24,14 +24,11 @@ export const Navbar = () => {
         </div>
         <ul className="nav__link__group">
           <li className="nav__links">
-            <Link to="/solutions">Solutions</Link>
+            <Link to="/">Solutions</Link>
           </li>
-          <li className="nav__links">
+          {/* <li className="nav__links">
             <Link to="/partners">Partners</Link>
-          </li>
-          <li className="nav__links">
-            <Link to="/resources">Resources</Link>
-          </li>
+          </li> */}
           <li className="nav__links">
             <Link to="/blog">Blog</Link>
           </li>

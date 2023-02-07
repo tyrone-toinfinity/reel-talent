@@ -8,24 +8,46 @@ import { db } from "../../firebaseConfig";
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { Outlet, Link } from "react-router-dom";
-import { BlogPost } from "./BlogPost";
+import { ErrorPage } from "../Error/ErrorPage";
+import { Loading } from "../../components/Loading";
 
 // Assets
 import paint_strokes from "../../assets/svg/paint_strokes.svg";
 
 export const Blog = () => {
+  // Fetch data
   const [posts, setPosts] = useState([]);
   const postCol = collection(db, "posts");
-
+  // Error Handling
+  const [error, setError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     getDocs(postCol).then((ss) => {
       setPosts(ss.docs);
     });
+
+    if (posts.length <= 0) {
+      setIsLoading(false);
+    } else {
+      setIsLoading(false);
+      setError(true);
+    }
   }, []);
+
+  if (isLoading) {
+    return (
+      <>
+        <Loading />
+      </>
+    );
+  }
+
+  if (error) {
+    return <ErrorPage />;
+  }
 
   // const lastElement = posts[0].data();
   // console.log(posts[0].data());
-
   return (
     <div>
       <Navbar />
@@ -60,18 +82,18 @@ export const Blog = () => {
           </div>
         </Link> */}
         {/* Cards */}
-        <div class="card card__main">
+        <div className="card card__main">
           {posts.map((post) => (
-            <div class="row mb-3 blog__cardContainer" key={post.id}>
-              <div class="col-md-8 col-sm-12 listing__description">
-                <div class="card-body">
+            <div className="row mb-3 blog__cardContainer" key={post.id}>
+              <div className="col-md-8 col-sm-12 listing__description">
+                <div className="card-body">
                   <Link
                     to={`/blog/${post.data().title}`}
                     state={{ post: post.data() }}
                   >
-                    <div class="d-flex justify-content-between">
-                      <span class="card-text">{post.data().author} • </span>
-                      <span class="card-text">
+                    <div className="d-flex justify-content-between">
+                      <span className="card-text">{post.data().author} • </span>
+                      <span className="card-text">
                         {new Date(
                           post.data().published_date.toDate()
                         ).toLocaleDateString("default", {
@@ -81,19 +103,23 @@ export const Blog = () => {
                         })}
                       </span>
                     </div>
-                    <h5 class="card-title post__title">{post.data().title}</h5>
+                    <h5 className="card-title post__title">
+                      {post.data().title}
+                    </h5>
                   </Link>
-                  <p class="card-text post__summary">{post.data().summary}</p>
+                  <p className="card-text post__summary">
+                    {post.data().summary}
+                  </p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 align-self-center ">
+              <div className="col-md-4 col-sm-12 align-self-center ">
                 <Link
                   to={`/blog/${post.data().title}`}
                   state={{ post: post.data() }}
                 >
                   <img
                     src={post.data().image_url}
-                    class="card-img-top "
+                    className="card-img-top "
                     alt="..."
                   />
                 </Link>

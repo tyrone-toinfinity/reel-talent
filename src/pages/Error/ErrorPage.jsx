@@ -22,7 +22,6 @@ export const ErrorPage = () => {
           <button className="btn1">Return Home</button>
         </Link>
       </div>
-      <BookingCard />
       <SiteFooter />
     </div>
   );

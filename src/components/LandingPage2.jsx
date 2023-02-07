@@ -7,22 +7,22 @@ import { useSpring, animated } from "react-spring";
 
 // images
 import businessMeeting from "../assets/images/bussiness-meeting.jpg";
-import pl1 from "../assets/images/placeholderimg1.jpeg";
-import pl2 from "../assets/images/placeholderimg2.jpeg";
-import pl3 from "../assets/images/placeholderimg3.jpeg";
+import pl1 from "../assets/images/group-working.jpg";
+import pl2 from "../assets/images/girl-smiling.jpg";
+import pl3 from "../assets/images/man-on-phone.jpg";
 import { useEffect, useRef, useState } from "react";
 
 export const LandingPage2 = () => {
-  // const [scrollY, setScrollY] = useState(0);
-  // const image1Y = useSpring({
-  //   transform: `translate3d(0, ${scrollY / 4}px, 0)`,
-  // });
-  // const image2Y = useSpring({
-  //   transform: `translate3d(0, ${scrollY / 2}px, 0)`,
-  // });
-  // const image3Y = useSpring({
-  //   transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
-  // });
+  const [scrollY, setScrollY] = useState(0);
+  const image1Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 4}px, 0)`,
+  });
+  const image2Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 2}px, 0)`,
+  });
+  const image3Y = useSpring({
+    transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
+  });
 
   // useEffect(() => {
   //   function handleScroll() {
@@ -55,7 +55,7 @@ export const LandingPage2 = () => {
               src={pl1}
               alt="First Image"
               className="aspect-ratio-3-4"
-              // style={image1Y}
+              style={image1Y}
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ export const LandingPage2 = () => {
               src={pl2}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              // style={image2Y}
+              style={image2Y}
             />
           </div>
           <div className="col text-section">
@@ -99,12 +99,11 @@ export const LandingPage2 = () => {
               src={pl3}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              // style={image3Y}
+              style={image3Y}
             />
           </div>
         </div>
       </div>
-      <BookingCard />
     </div>
   );
 };

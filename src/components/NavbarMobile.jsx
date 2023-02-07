@@ -65,7 +65,7 @@ export const NavbarMobile = () => {
             Solutions
           </Link>
         </li>
-        <li
+        {/* <li
           onClick={() => {
             handleToggle(!toggled);
           }}
@@ -73,16 +73,8 @@ export const NavbarMobile = () => {
           <Link to="/" onClick={() => handleToggle(!toggled)}>
             Partners
           </Link>
-        </li>
-        <li
-          onClick={() => {
-            handleToggle(!toggled);
-          }}
-        >
-          <Link to="/" onClick={() => handleToggle(!toggled)}>
-            Resources
-          </Link>
-        </li>
+        </li> */}
+
         <li
           onClick={() => {
             handleToggle(!toggled);

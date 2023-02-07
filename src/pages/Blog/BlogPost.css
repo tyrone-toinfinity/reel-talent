@@ -81,6 +81,7 @@
 .author__social {
   color: #16382d;
   font-size: 1.5rem;
+  margin: 0.33rem 0;
 }
 .author__social:hover {
   color: #6a9d6f;
