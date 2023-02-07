@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.about__image {
+  align-self: flex-end;
+}
+
 .about__section {
   display: flex;
   flex-direction: row;

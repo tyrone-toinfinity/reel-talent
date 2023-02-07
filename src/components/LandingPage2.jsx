@@ -13,25 +13,18 @@ import pl3 from "../assets/images/man-on-phone.jpg";
 import { useEffect, useRef, useState } from "react";
 
 export const LandingPage2 = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const image1Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 4}px, 0)`,
-  });
-  const image2Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 2}px, 0)`,
-  });
-  const image3Y = useSpring({
-    transform: `translate3d(0, ${scrollY / 1.5}px, 0)`,
-  });
+  const [image1Props, setImage1Props] = useSpring(() => ({ y: 0 }));
+  const [image2Props, setImage2Props] = useSpring(() => ({ y: 0 }));
+  const [image3Props, setImage3Props] = useSpring(() => ({ y: 0 }));
 
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     setScrollY(window.pageYOffset);
-  //   }
+  const handleImage1Hover = () => setImage1Props({ y: -10 });
+  const handleImage1Leave = () => setImage1Props({ y: 0 });
 
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  const handleImage2Hover = () => setImage2Props({ y: -10 });
+  const handleImage2Leave = () => setImage2Props({ y: 0 });
+
+  const handleImage3Hover = () => setImage3Props({ y: -10 });
+  const handleImage3Leave = () => setImage3Props({ y: 0 });
 
   return (
     <div>
@@ -55,7 +48,13 @@ export const LandingPage2 = () => {
               src={pl1}
               alt="First Image"
               className="aspect-ratio-3-4"
-              style={image1Y}
+              style={{
+                transform: image1Props.y.interpolate(
+                  (y) => `translateY(${y}px)`
+                ),
+              }}
+              onMouseEnter={handleImage1Hover}
+              onMouseLeave={handleImage1Leave}
             />
           </div>
         </div>
@@ -65,7 +64,13 @@ export const LandingPage2 = () => {
               src={pl2}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              style={image2Y}
+              style={{
+                transform: image2Props.y.interpolate(
+                  (y) => `translateY(${y}px)`
+                ),
+              }}
+              onMouseEnter={handleImage2Hover}
+              onMouseLeave={handleImage2Leave}
             />
           </div>
           <div className="col text-section">
@@ -99,7 +104,13 @@ export const LandingPage2 = () => {
               src={pl3}
               alt="Second Image"
               className="aspect-ratio-3-4"
-              style={image3Y}
+              style={{
+                transform: image3Props.y.interpolate(
+                  (y) => `translateY(${y}px)`
+                ),
+              }}
+              onMouseEnter={handleImage3Hover}
+              onMouseLeave={handleImage3Leave}
             />
           </div>
         </div>

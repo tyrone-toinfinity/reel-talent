@@ -5,11 +5,11 @@ import "./About.css";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 // Package
+
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 // Assets
 import water from "../../assets/svg/water-drop.svg";
-import community from "../../assets/images/about-us-1.jpg";
 
 export const About = () => {
   return (
@@ -36,21 +36,7 @@ export const About = () => {
             />
           </div>
         </section>
-        <section className="card__section">
-          <div class="card" style="width: 18rem;">
-            <img src={community} class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-
+        {/* <section className="card__section">
           <Card className="card__container">
             <CardImg
               bottom
@@ -119,7 +105,7 @@ export const About = () => {
               </CardText>
             </CardBody>
           </Card>
-        </section>
+        </section> */}
       </main>
       <SiteFooter />
     </>

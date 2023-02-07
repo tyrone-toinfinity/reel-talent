@@ -17,9 +17,11 @@ export const Calendly = () => {
         </p>
       </div>
       <InlineWidget
-        styles={{
-          height: "1000px",
-        }}
+        styles={
+          {
+            // height: "1000px",
+          }
+        }
         pageSettings={{
           backgroundColor: "fff",
           hideEventTypeDetails: false,

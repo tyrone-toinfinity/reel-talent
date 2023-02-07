@@ -59,8 +59,8 @@ export const Demo = () => {
         </div>
 
         {/* Contact box */}
-        <section className="contact__main">
-          <div className="contact__container">
+        {/* <section className="contact__main"> */}
+        {/* <div className="contact__container">
             {" "}
             <h2 className="contact__heading">Contact us</h2>
             <p className="contact__pg">
@@ -70,10 +70,10 @@ export const Demo = () => {
               Let's work together to build a strong foundation for your
               company's success.
             </p>
-          </div>
+          </div> */}
 
-          {/* Form */}
-          <form onSubmit={handleSubmit}>
+        {/* Form */}
+        {/* <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">Name:</label>
               <input
@@ -126,8 +126,8 @@ export const Demo = () => {
             <button className="button-22" type="submit">
               Submit
             </button>
-          </form>
-        </section>
+          </form> */}
+        {/* </section> */}
 
         <SiteFooter />
       </div>
