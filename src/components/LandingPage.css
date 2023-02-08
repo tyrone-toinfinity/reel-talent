@@ -93,4 +93,34 @@
   .image__girl {
     order: 1;
   }
+  .landing-page-headings {
+    font-weight: 400;
+    font-size: 3rem;
+  }
 }
+
+@media (max-width: 576px) {
+  .landing-page-headings {
+    font-size: 1.8rem;
+  }
+}
+
+/* .row:nth-of-type(4) {
+  background-image: url("../assets/svg/seaweed-pattern-02.svg");
+  background-size: cover;
+
+}
+
+.row:nth-of-type(5) {
+  background-image: url(${pl5});
+  background-size: cover;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-shadow: 1px 1px black;
+} */

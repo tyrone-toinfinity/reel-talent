@@ -77,8 +77,7 @@ export const LandingPage = () => {
           </div>
           <div className="col text-section">
             <h1 className="landing-page-headings">
-              Creating a Positive Workplace: The Benefits of Good Hiring
-              Practices
+              The Benefits of Good Hiring Practices
             </h1>
             <p className="landing-page-pg">
               Another important aspect of hiring good people is that they help
@@ -115,23 +114,10 @@ export const LandingPage = () => {
             />
           </div>
         </div>
-        <div className="break__text"></div>
+        {/* <div className="break__text"></div>
+
         <div className="row">
-          <div className="col image-section image__girl">
-            <animated.img
-              src={pl4}
-              alt="Second Image"
-              className="aspect-ratio-3-4"
-              style={{
-                transform: image2Props.y.interpolate(
-                  (y) => `translateY(${y}px)`
-                ),
-              }}
-              onMouseEnter={handleImage2Hover}
-              onMouseLeave={handleImage2Leave}
-            />
-          </div>
-          <div className="col text-section">
+          <div className="text-container">
             <h1 className="landing-page-headings">
               A Comprehensive Hiring Solution
             </h1>
@@ -143,8 +129,8 @@ export const LandingPage = () => {
               organization.
             </p>
           </div>
-        </div>
-        <div className="row">
+        </div> */}
+        {/* <div className="row">
           <div className="col image-section image__girl">
             <animated.img
               src={pl5}
@@ -171,7 +157,7 @@ export const LandingPage = () => {
               for your business.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
