@@ -1,0 +1,101 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  max-width: 80rem;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-btn[type="submit"] {
+  align-items: center;
+  appearance: button;
+  background-color: #0276ff;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.contact-btn[type="submit"]:hover,
+.contact-btn[type="submit"]:active {
+  background-color: #006ae8;
+}
+
+/* Thank you */
+.thank-you {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.thank-you img {
+  margin: 2rem auto;
+}
+
+.thank-you h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.thank-you p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.thank-you-blog {
+  color: #136bfc;
+}
+
+.thank-you-blog:hover {
+  color: #6a9d6f;
+}
+
+@media (max-width: 576px) {
+  .thank-you-img {
+    width: 80%;
+  }
+  .thank-you-header {
+    line-height: 3rem;
+  }
+}

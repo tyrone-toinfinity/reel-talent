@@ -4,7 +4,7 @@ import "./Demo.css";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 import { Calendly } from "../../components/Calendly";
-import { NavbarMobile } from "../../components/NavbarMobile";
+import { ContactForm } from "../../components/ContactForm";
 
 export const Demo = () => {
   return (
@@ -48,6 +48,7 @@ export const Demo = () => {
             together to build a strong foundation for your company's success.
           </p>
         </div>
+        <ContactForm />
       </section>
       <SiteFooter />
     </div>
