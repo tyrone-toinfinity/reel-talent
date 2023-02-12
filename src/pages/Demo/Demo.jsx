@@ -4,6 +4,8 @@ import "./Demo.css";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 import { Calendly } from "../../components/Calendly";
+import { NavbarMobile } from "../../components/NavbarMobile";
+
 export const Demo = () => {
   return (
     <div>
