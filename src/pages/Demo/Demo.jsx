@@ -40,16 +40,18 @@ export const Demo = () => {
       <section className="contact__main">
         <div className="contact__container">
           {" "}
-          <h2 className="contact__heading">Contact us</h2>
-          <p className="contact__pg">
+          <h2 className="contact__heading">
+            Find Your Perfect Fit, Connect with Us Today 👋
+          </h2>
+          {/* <p className="contact__pg">
             Reach out to us at Reel Talent to transform your recruitment process
             and build a more engaged workforce. With our expertise, accelerate
             your hiring and connect with the best talent available. Let's work
             together to build a strong foundation for your company's success.
-          </p>
+          </p> */}
         </div>
-        <ContactForm />
       </section>
+      <ContactForm />
       <SiteFooter />
     </div>
   );

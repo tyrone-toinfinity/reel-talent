@@ -5,33 +5,56 @@ form {
   width: 80%;
   margin: 2rem auto;
   padding: 1em;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 5px;
   max-width: 80rem;
 }
-
-label,
-input,
-textarea {
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80rem;
   width: 100%;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  box-sizing: border-box;
-  font-size: 1em;
+  gap: 2rem;
 }
 
-label {
-  font-weight: bold;
-  text-align: left;
+.form-row {
+  width: 100%;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.form-row > input,
+.form-row > select,
+.form-textarea {
+  font-size: 1.1rem;
+  width: 100%;
+  height: 2.25rem;
+  background-color: #fafafa;
+  border: none;
+  padding: 0.5rem;
 }
 
-input,
-textarea {
-  border: 1px solid gray;
-  border-radius: 5px;
+.form-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-textarea {
+  height: 15rem;
+  /* background-color: #fafafa;
+  border: none; */
+}
+
+.form-text-container > label {
+  margin: 0.5rem 0;
 }
 
 .contact-btn[type="submit"] {
+  width: 50%;
   align-items: center;
   appearance: button;
   background-color: #0276ff;
@@ -48,7 +71,7 @@ textarea {
   font-family: "RM Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
+  margin: 1rem;
   padding: 10px 21px;
   text-transform: none;
   transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
@@ -56,6 +79,7 @@ textarea {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  align-self: flex-start;
 }
 
 .contact-btn[type="submit"]:hover,
@@ -63,10 +87,24 @@ textarea {
   background-color: #006ae8;
 }
 
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+  .form-section {
+    gap: 0;
+    flex-direction: column;
+  }
+  .contact-btn {
+    max-width: 100%;
+  }
+}
+
 /* Thank you */
 .thank-you {
   text-align: center;
   margin: 2rem auto;
+  padding: 1rem;
 }
 
 .thank-you img {
