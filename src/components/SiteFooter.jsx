@@ -32,18 +32,18 @@ export const SiteFooter = () => {
 
       <div className="copyright">
         &copy; {new Date().getFullYear()} Reel Talent. All rights reserved.
-      </div>
-      <div className="powered-by">
-        Powered by{" "}
-        <a
-          className="teamAiLink"
-          href="https://www.team.ai/talent-delivery-services"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={teamAiLogo} alt="Team AI" />
-          <p className="teamAiTitle"> Team AI</p>
-        </a>{" "}
+        <div className="powered-by">
+          Powered by{" "}
+          <a
+            className="teamAiLink"
+            href="https://www.team.ai/talent-delivery-services"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={teamAiLogo} alt="Team AI" />
+            <p className="teamAiTitle"> Team AI</p>
+          </a>{" "}
+        </div>
       </div>
     </footer>
   );

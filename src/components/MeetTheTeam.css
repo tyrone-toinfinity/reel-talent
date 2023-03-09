@@ -6,21 +6,17 @@
 }
 
 .team-member {
-  margin-right: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 50%;
+  padding: 0 1rem;
 }
 .team-member h3 {
   font-size: 1.5rem;
 }
 
-/* .team-member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-} */
-
-.team-member img {
+.team-member__image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -48,7 +44,10 @@
 .team-member__quote {
   font-style: italic;
 }
-
+.team-memeber__author {
+  font-style: normal;
+  font-weight: 700;
+}
 .meetTeamHeader {
   font-size: 3rem;
 }
@@ -58,6 +57,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  .team-member {
+    width: 100%;
   }
   .meetTeamHeader {
     font-size: 2rem;
