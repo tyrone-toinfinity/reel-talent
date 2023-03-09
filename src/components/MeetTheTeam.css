@@ -1,0 +1,65 @@
+.team {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  max-width: 80rem;
+}
+
+.team-member {
+  margin-right: 20px;
+  text-align: center;
+  width: 50%;
+}
+.team-member h3 {
+  font-size: 1.5rem;
+}
+
+/* .team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+} */
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+  filter: grayscale(0%);
+}
+
+.team-member__role {
+  font-size: 1.2rem;
+}
+
+.team-member h3 {
+  margin: 10px 0 0 0;
+}
+
+.team-member p {
+  margin: 1rem 0;
+  line-height: 1.9rem;
+}
+
+.team-member__quote {
+  font-style: italic;
+}
+
+.meetTeamHeader {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .meetTeamHeader {
+    font-size: 2rem;
+  }
+}

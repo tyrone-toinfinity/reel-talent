@@ -2,7 +2,8 @@ footer {
   background-color: #16382d;
   color: #fff;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 0 4rem 0;
+  position: relative;
 }
 
 .footer__container {
@@ -37,6 +38,32 @@ footer {
   margin: 1rem 0 0 0;
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.7);
+}
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  width: max-content;
+}
+.teamAiLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.powered-by img {
+  height: 2.5rem;
+  margin-left: 0.5rem;
+}
+.teamAiTitle {
+  margin-left: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {

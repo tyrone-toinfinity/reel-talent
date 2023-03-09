@@ -3,6 +3,7 @@ import "./About.css";
 // Components
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
+import { MeetTheTeam } from "../../components/MeetTheTeam";
 // Package
 // Assets
 import water from "../../assets/svg/water-drop.svg";
@@ -30,7 +31,8 @@ export const About = () => {
             you'll find the right fit for your organization.
           </p>
         </section>
-        {/* <section className="card__section">
+        <MeetTheTeam />
+        <section className="card__section">
           <div className="about__card">
             <img src={Image1} alt="Transparency" className="about__img" />
             <h2 className="card__title ">Transparency</h2>
@@ -59,8 +61,9 @@ export const About = () => {
               ensuring a good fit for both the company and the job seeker.
             </p>
           </div>
-        </section> */}
+        </section>
       </section>
+
       <SiteFooter />
     </>
   );
