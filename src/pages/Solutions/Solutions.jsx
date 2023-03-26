@@ -64,7 +64,7 @@ export const Solutions = () => {
 
         <section className="cta">
           <div className="cta__container">
-            <div>
+            <div className="cta__link">
               <h3 className="cta__tagline">
                 Discover the Future of Hiring with Our AI-Powered Platform
               </h3>
@@ -73,7 +73,7 @@ export const Solutions = () => {
               </Link>
             </div>
 
-            <img src={ctaLogo} alt="" width={500} />
+            <img className="cta__logo" src={ctaLogo} alt="" width={500} />
           </div>
         </section>
       </section>
