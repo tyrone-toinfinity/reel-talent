@@ -24,11 +24,9 @@ export const Navbar = () => {
         </div>
         <ul className="nav__link__group">
           <li className="nav__links">
-            <Link to="/">Solutions</Link>
+            <Link to="/solutions">Solutions</Link>
           </li>
-          {/* <li className="nav__links">
-            <Link to="/partners">Partners</Link>
-          </li> */}
+
           <li className="nav__links">
             <Link to="/blog">Blog</Link>
           </li>
