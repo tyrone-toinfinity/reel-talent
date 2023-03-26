@@ -1,5 +1,3 @@
-import React from "react";
-
 // Components
 import { Home } from "../../pages/Home/Home";
 import { Demo } from "../../pages/Demo/Demo";
@@ -8,6 +6,7 @@ import { BlogPost } from "../../pages/Blog/BlogPost";
 import { Legal } from "../../pages/Legal/Legal";
 import { ErrorPage } from "../../pages/Error/ErrorPage";
 import { About } from "../../pages/About/About";
+import { Solutions } from "../../pages/Solutions/Solutions";
 
 // Packages
 import { Route, Navigate } from "react-router-dom";
@@ -15,7 +14,7 @@ import { Route, Navigate } from "react-router-dom";
 export const routes = [
   {
     path: "/",
-    element: <Route path="/" element={<Home />} scrollToTop />,
+    element: <Route path="/" element={<Home />} />,
   },
   {
     path: "/demo",
@@ -36,6 +35,10 @@ export const routes = [
   {
     path: "/blog/:title",
     element: <Route path="/blog/:title" element={<BlogPost />} />,
+  },
+  {
+    path: "/solutions",
+    element: <Route path="/solutions" element={<Solutions />} />,
   },
   {
     path: "404",

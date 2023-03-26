@@ -7,10 +7,10 @@ import { SiteFooter } from "../../components/SiteFooter";
 // Packages
 import React from "react";
 
-export const Home = ({ scrollToNav, navRef }) => {
+export const Home = () => {
   return (
     <div>
-      <Navbar navRef={navRef} />
+      <Navbar />
       <LandingPage />
       <SiteFooter />
     </div>
