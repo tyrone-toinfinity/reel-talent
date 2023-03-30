@@ -41,6 +41,8 @@ export const BlogPost = () => {
   const words = fullText.split(" ").length;
   const readingSpeed = 250; // 250 words per minute
   const readingTimeInMinutes = Math.ceil(words / readingSpeed);
+
+  // console.log(post);
   return (
     <div>
       <Navbar />
