@@ -6,8 +6,8 @@ import { SiteFooter } from "../../components/SiteFooter";
 import { db } from "../../firebaseConfig";
 // Packages
 import { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { Outlet, Link } from "react-router-dom";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import { Link } from "react-router-dom";
 import { ErrorPage } from "../Error/ErrorPage";
 import { Loading } from "../../components/Loading";
 
@@ -18,36 +18,34 @@ export const Blog = () => {
   // Fetch data
   const [posts, setPosts] = useState([]);
   const postCol = collection(db, "posts");
+
   // Error Handling
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    getDocs(postCol).then((ss) => {
-      setPosts(ss.docs);
-    });
 
-    if (posts.length <= 0) {
-      setIsLoading(false);
-    } else {
-      setIsLoading(false);
-      setError(true);
-    }
-  }, []);
+  useEffect(() => {
+    // Fetch data and sort by published date in descending order
+    const q = query(postCol, orderBy("published_date", "desc"));
+    getDocs(q)
+      .then((ss) => {
+        setPosts(ss.docs);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError(true);
+        setIsLoading(false);
+      });
+  }, [postCol]);
 
   if (isLoading) {
-    return (
-      <>
-        <Loading />
-      </>
-    );
+    return <Loading />;
   }
 
   if (error) {
     return <ErrorPage />;
   }
 
-  // const lastElement = posts[0].data();
-  // console.log(posts[0].data());
   return (
     <div>
       <Navbar />
@@ -70,17 +68,7 @@ export const Blog = () => {
             including best hiring practices.
           </h4>
         </div>
-        {/* <Link to={`/blog/${lastElement.title}`} state={lastElement}>
-          <div class="blog__heroContainer">
-            <img className="blog__heroImg" src={lastElement.image_url} alt="" />
-            <div class="blog__heroInfo">
-              <div class="blog__date">
-                <span className="blog__author"> {lastElement.author}</span>
-              </div>
-              <div class="blog__title">{lastElement.title}</div>
-            </div>
-          </div>
-        </Link> */}
+
         {/* Cards */}
         <div className="card card__main">
           {posts.map((post) => (
