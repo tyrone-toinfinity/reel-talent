@@ -49,7 +49,7 @@ export const BlogPost = () => {
       <section className="blogPost__main">
         <div className="blogPost_wrapper">
           <Link className="blogPost__back" to={"/blog"}>
-            <BsChevronLeft /> blog Test
+            <BsChevronLeft /> blog
           </Link>
           <div className="blogPost__header">
             <h1>{post.title}</h1>
