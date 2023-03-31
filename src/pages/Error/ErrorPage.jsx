@@ -2,7 +2,7 @@
 import "./ErrorPage.css";
 // Components
 import { Navbar } from "../../components/Navbar";
-import { BookingCard } from "../../components/BookingCard";
+
 import { SiteFooter } from "../../components/SiteFooter";
 // Packages
 import { Link, useNavigate } from "react-router-dom";
