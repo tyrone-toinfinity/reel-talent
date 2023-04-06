@@ -1,6 +1,17 @@
-import React from "react";
+// CSS
 import "./PricingPage.css";
 
+//Assets
+import { Navbar } from "../../components/Navbar";
+
+import { SiteFooter } from "../../components/SiteFooter";
+
 export const PricingPage = () => {
-  return <div>PricingPage</div>;
+  return (
+    <>
+      <Navbar />
+      Test
+      <SiteFooter />
+    </>
+  );
 };

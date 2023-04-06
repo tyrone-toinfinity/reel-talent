@@ -7,6 +7,7 @@ import { Legal } from "../../pages/Legal/Legal";
 import { ErrorPage } from "../../pages/Error/ErrorPage";
 import { About } from "../../pages/About/About";
 import { Solutions } from "../../pages/Solutions/Solutions";
+import { PricingPage } from "../../pages/Pricing/PricingPage";
 
 // Packages
 import { Route, Navigate } from "react-router-dom";
@@ -43,6 +44,10 @@ export const routes = [
   {
     path: "404",
     element: <Route path="404" element={<ErrorPage />} />,
+  },
+  {
+    path: "pricing",
+    element: <Route path="pricing" element={<PricingPage />} />,
   },
   {
     path: "*",
