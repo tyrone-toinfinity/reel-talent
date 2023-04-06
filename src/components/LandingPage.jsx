@@ -34,7 +34,7 @@ export const LandingPage = () => {
         <div className="row">
           <div className="col text-section">
             <h1 className="landing-page-headings">
-              Better hiring starts with Reel Talent
+              Better Hiring starts with Reel Talent
             </h1>
             <p className="landing-page-pg">
               Hiring good people is important for the success of any business.
@@ -77,7 +77,7 @@ export const LandingPage = () => {
           </div>
           <div className="col text-section">
             <h1 className="landing-page-headings">
-              The Benefits of Good Hiring Practices
+              The Benefits Of Good Hiring Practices
             </h1>
             <p className="landing-page-pg">
               Another important aspect of hiring good people is that they help
@@ -90,7 +90,7 @@ export const LandingPage = () => {
         <div className="row">
           <div className="col text-section">
             <h1 className="landing-page-headings">
-              How Reel Talent Can Help You Hire the Right People
+              How Reel Talent Can Help You Hire The Right People
             </h1>
             <p className="landing-page-pg">
               At Reel Talent, we are dedicated to providing our clients with the
