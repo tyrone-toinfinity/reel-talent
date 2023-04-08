@@ -19,7 +19,6 @@ export const SiteFooter = () => {
         <Link to="/legal">
           <li className="footer__links">Terms and Conditions</li>
         </Link>
-
         <Link to="/legal#privacy">
           <li className="footer__links">Privacy Policy</li>
         </Link>

@@ -107,50 +107,6 @@ export const LandingPage = () => {
             />
           </div>
         </div>
-        {/* <div className="break__text"></div>
-
-        <div className="row">
-          <div className="text-container">
-            <h1 className="landing-page-headings">
-              A Comprehensive Hiring Solution
-            </h1>
-            <p className="landing-page-pg">
-              At Reel Talent, we offer a complete range of hiring services, from
-              job postings and candidate sourcing to interview support and
-              onboarding. Our team of experienced recruiters will work with you
-              every step of the way to help you find the best talent for your
-              organization.
-            </p>
-          </div>
-        </div> */}
-        {/* <div className="row">
-          <div className="col image-section image__girl">
-            <animated.img
-              src={pl5}
-              alt="Second Image"
-              className="aspect-ratio-3-4"
-              style={{
-                transform: image2Props.y.interpolate(
-                  (y) => `translateY(${y}px)`
-                ),
-              }}
-              onMouseEnter={handleImage2Hover}
-              onMouseLeave={handleImage2Leave}
-            />
-          </div>
-          <div className="col text-section">
-            <h1 className="landing-page-headings">
-              Partner with Reel Talent for a Better Hiring Experience
-            </h1>
-            <p className="landing-page-pg">
-              Reel Talent is your trusted partner in hiring. We understand the
-              challenges of finding the right candidates and we are committed to
-              making the process smoother and more efficient for you. Partner
-              with us today and see the difference that better hiring can make
-              for your business.
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
