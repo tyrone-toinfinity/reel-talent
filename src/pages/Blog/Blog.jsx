@@ -3,13 +3,14 @@ import "./Blog.css";
 // Components
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
+import { ErrorPage } from "../Error/ErrorPage";
+import { Loading } from "../../components/Loading";
 import { db } from "../../firebaseConfig";
 // Packages
 import { useState, useEffect } from "react";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { Link } from "react-router-dom";
-import { ErrorPage } from "../Error/ErrorPage";
-import { Loading } from "../../components/Loading";
+// import { useSWRConfig } from "swr";
 
 // Assets
 import paint_strokes from "../../assets/svg/paint_strokes.svg";

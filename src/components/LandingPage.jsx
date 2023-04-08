@@ -1,18 +1,11 @@
 // CSS
 import "./LandingPage.css";
-
 // Components
 import { useSpring, animated } from "react-spring";
-
 // images
-import businessMeeting from "../assets/images/bussiness-meeting.jpg";
 import pl1 from "../assets/images/group-working.jpg";
 import pl2 from "../assets/images/girl-smiling.jpg";
 import pl3 from "../assets/images/man-on-phone.jpg";
-import pl4 from "../assets/svg/seaweed-pattern01.svg";
-
-import pl5 from "../assets/svg/seashell-pattern-01.svg";
-import { useEffect, useRef, useState } from "react";
 
 export const LandingPage = () => {
   const [image1Props, setImage1Props] = useSpring(() => ({ y: 0 }));

@@ -43,12 +43,6 @@ export const Demo = () => {
           <h2 className="contact__heading">
             Find Your Perfect Fit, Connect with Us Today 👋
           </h2>
-          {/* <p className="contact__pg">
-            Reach out to us at Reel Talent to transform your recruitment process
-            and build a more engaged workforce. With our expertise, accelerate
-            your hiring and connect with the best talent available. Let's work
-            together to build a strong foundation for your company's success.
-          </p> */}
         </div>
       </section>
       <ContactForm />

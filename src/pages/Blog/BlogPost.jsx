@@ -1,6 +1,6 @@
 import "./BlogPost.css";
 // Component
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 import { ErrorPage } from "../Error/ErrorPage";
