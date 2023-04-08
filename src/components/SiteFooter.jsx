@@ -3,31 +3,25 @@ import "./SiteFooter.css";
 // assets
 import teamAiLogo from "../assets/brand/teamai-logo.jpg";
 // Package
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const SiteFooter = () => {
-  const navigate = useNavigate();
   return (
     <footer>
       <ul className="footer__container">
-        <li className="footer__links" onClick={() => navigate("/")}>
-          About Us
-        </li>
-        <li className="footer__links" onClick={() => navigate("/")}>
-          Our Services
-        </li>
-        <li
-          className="footer__links"
-          onClick={() => navigate("/legal#terms__conditions")}
-        >
-          Terms and Conditions
-        </li>
-        <li
-          className="footer__links"
-          onClick={() => navigate("/legal#privacy")}
-        >
-          Privacy Policy
-        </li>
+        <Link to="/">
+          <li className="footer__links">About Us</li>
+        </Link>
+        <Link to="/">
+          <li className="footer__links">Our Services</li>
+        </Link>
+
+        <Link to="/legal">
+          <li className="footer__links">Terms and Conditions</li>
+        </Link>
+        <Link to="/legal#privacy">
+          <li className="footer__links">Privacy Policy</li>
+        </Link>
       </ul>
 
       <div className="copyright">

@@ -6,13 +6,9 @@ import { SiteFooter } from "../../components/SiteFooter";
 import { MeetTheTeam } from "../../components/MeetTheTeam";
 // Package
 // Assets
-import water from "../../assets/svg/water-drop.svg";
 import Image1 from "../../assets/images/pexels-mizuno-k-12903281.jpg";
 import Image2 from "../../assets/images/pexels-fauxels-3184300.jpg";
 import Image3 from "../../assets/images/pexels-fauxels-3183172.jpg";
-import Image4 from "../../assets/svg/seaweed-pattern01.svg";
-
-import Image5 from "../../assets/svg/seashell-pattern-01.svg";
 export const About = () => {
   return (
     <>

@@ -5,6 +5,7 @@ import { Navbar } from "../../components/Navbar";
 import { SiteFooter } from "../../components/SiteFooter";
 // Assets
 import legal from "../../assets/svg/legal-graphic.svg";
+
 export const Legal = () => {
   return (
     <>
