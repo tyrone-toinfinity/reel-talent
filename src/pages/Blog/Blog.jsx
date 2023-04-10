@@ -7,10 +7,9 @@ import { ErrorPage } from "../Error/ErrorPage";
 import { Loading } from "../../components/Loading";
 import { db } from "../../firebaseConfig";
 // Packages
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { Link } from "react-router-dom";
-// import { useSWRConfig } from "swr";
 
 // Assets
 import paint_strokes from "../../assets/svg/paint_strokes.svg";
@@ -18,7 +17,7 @@ import paint_strokes from "../../assets/svg/paint_strokes.svg";
 export const Blog = () => {
   // Fetch data
   const [posts, setPosts] = useState([]);
-  const postCol = collection(db, "posts");
+  const postCol = useMemo(() => collection(db, "posts"), []);
 
   // Error Handling
   const [error, setError] = useState(false);
