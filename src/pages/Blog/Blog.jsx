@@ -18,34 +18,32 @@ export const Blog = () => {
   // Fetch data
   const [posts, setPosts] = useState([]);
   const postCol = useMemo(() => collection(db, "posts"), []);
-
   // Error Handling
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Fetch data and sort by published date in descending order
-    const q = query(postCol, orderBy("published_date", "desc"));
-    getDocs(q)
-      .then((ss) => {
+    const fetchPosts = async () => {
+      try {
+        const q = query(postCol, orderBy("published_date", "desc"));
+        const ss = await getDocs(q);
         setPosts(ss.docs);
         setIsLoading(false);
-      })
-      .catch((err) => {
+      } catch (err) {
         console.error(err);
         setError(true);
         setIsLoading(false);
-      });
+      }
+    };
+    fetchPosts();
   }, [postCol]);
-
   if (isLoading) {
     return <Loading />;
   }
-
   if (error) {
     return <ErrorPage />;
   }
-
   return (
     <div>
       <Navbar />
