@@ -24,7 +24,7 @@ lerna-debug.log*
 .idea
 
 # local env files
-# .env
+.env
 
 # misc
 .DS_Store
