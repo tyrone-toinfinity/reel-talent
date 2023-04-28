@@ -16,7 +16,7 @@ export const Navbar = () => {
               src={logo}
               className="logo"
               alt="Logo"
-              width="200"
+              width="50"
               height="50"
             />
           </Link>
