@@ -6,4 +6,13 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+        },
+      },
+    },
+  },
 });
