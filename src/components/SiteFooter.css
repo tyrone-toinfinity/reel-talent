@@ -47,7 +47,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 .teamAiLink {
   display: flex;
@@ -61,6 +61,11 @@ footer {
 }
 .teamAiTitle {
   margin-left: 0.5rem;
+  color: #fff;
+}
+
+.teamAiLogo {
+  width: 2rem;
 }
 
 @media screen and (max-width: 768px) {

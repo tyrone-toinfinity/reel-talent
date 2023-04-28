@@ -12,7 +12,13 @@ export const Navbar = () => {
       <section className="nav__container">
         <div className="logo__container">
           <Link to="/">
-            <img src={logo} className="logo" alt="Logo" />
+            <img
+              src={logo}
+              className="logo"
+              alt="Logo"
+              width="200"
+              height="50"
+            />
           </Link>
 
           <Link to="/">

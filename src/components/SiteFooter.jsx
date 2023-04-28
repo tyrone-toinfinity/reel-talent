@@ -9,19 +9,18 @@ export const SiteFooter = () => {
   return (
     <footer>
       <ul className="footer__container">
-        <Link to="/">
-          <li className="footer__links">About Us</li>
-        </Link>
-        <Link to="/">
-          <li className="footer__links">Our Services</li>
-        </Link>
-
-        <Link to="/legal">
-          <li className="footer__links">Terms and Conditions</li>
-        </Link>
-        <Link to="/legal#privacy">
-          <li className="footer__links">Privacy Policy</li>
-        </Link>
+        <li className="footer__links">
+          <Link to="/">About Us</Link>
+        </li>
+        <li className="footer__links">
+          <Link to="/">Our Services</Link>
+        </li>
+        <li className="footer__links">
+          <Link to="/legal">Terms and Conditions</Link>
+        </li>
+        <li className="footer__links">
+          <Link to="/legal#privacy">Privacy Policy</Link>
+        </li>
       </ul>
 
       <div className="copyright">
@@ -34,7 +33,12 @@ export const SiteFooter = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={teamAiLogo} alt="Team AI" />
+            <img
+              src={teamAiLogo}
+              className="teamAiLogo"
+              alt="Team AI"
+              width={35}
+            />
             <p className="teamAiTitle"> Team AI</p>
           </a>{" "}
         </div>
