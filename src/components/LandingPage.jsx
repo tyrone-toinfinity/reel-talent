@@ -3,9 +3,9 @@ import "./LandingPage.css";
 // Components
 import { useSpring, animated } from "react-spring";
 // images
-import pl1 from "../assets/images/group-working.jpg";
-import pl2 from "../assets/images/girl-smiling.jpg";
-import pl3 from "../assets/images/man-on-phone.jpg";
+import pl1 from "../assets/images/group-working.webp";
+import pl2 from "../assets/images/girl-smiling.webp";
+import pl3 from "../assets/images/man-on-phone.webp";
 
 export const LandingPage = () => {
   const [image1Props, setImage1Props] = useSpring(() => ({ y: 0 }));
@@ -56,6 +56,7 @@ export const LandingPage = () => {
         <div className="row">
           <div className="col image-section image__girl">
             <animated.img
+              loading="lazy"
               src={pl2}
               alt="Second Image"
               className="aspect-ratio-3-4"
@@ -94,6 +95,7 @@ export const LandingPage = () => {
           </div>
           <div className="col image-section">
             <animated.img
+              loading="lazy"
               src={pl3}
               alt="Second Image"
               className="aspect-ratio-3-4"
