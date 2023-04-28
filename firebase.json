@@ -18,5 +18,5 @@
   "experiments": {
     "webframeworks": true
   },
-  "headers": [{ "key": "Cache-Control", "value": "max-age=604800" }]
+  "headers": [{ "key": "Cache-Control", "value": "max-age=86400" }]
 }
