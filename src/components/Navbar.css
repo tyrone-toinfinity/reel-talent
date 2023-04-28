@@ -27,6 +27,7 @@ nav {
 
 .logo {
   height: 2.5rem;
+  width: 2.5rem;
   transition: transform 0.3s;
 }
 
