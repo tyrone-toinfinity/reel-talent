@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp .env.production dist && firebase deploy --only hosting",
-    "serve": "firebase serve",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
