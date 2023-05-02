@@ -1,15 +1,11 @@
 // CSS
 import "./Legal.css";
-// Components
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
 // Assets
 import legal from "../../assets/svg/legal-graphic.svg";
 
 export const Legal = () => {
   return (
     <>
-      <Navbar />
       <figure className="legal__img__container">
         <img
           src={legal}
@@ -98,7 +94,6 @@ export const Legal = () => {
           </p>
         </div>
       </section>
-      <SiteFooter />
     </>
   );
 };

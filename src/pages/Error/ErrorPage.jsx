@@ -1,9 +1,5 @@
 // CSS
 import "./ErrorPage.css";
-// Components
-import { Navbar } from "../../components/Navbar";
-
-import { SiteFooter } from "../../components/SiteFooter";
 // Packages
 import { Link, useNavigate } from "react-router-dom";
 
@@ -11,7 +7,6 @@ export const ErrorPage = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Navbar />
       <div className="error-container">
         <h1 className="error__heading">Oops! Something went wrong.</h1>
         <p className="error__pg">
@@ -22,7 +17,6 @@ export const ErrorPage = () => {
           <button className="btn1">Return Home</button>
         </Link>
       </div>
-      <SiteFooter />
     </div>
   );
 };

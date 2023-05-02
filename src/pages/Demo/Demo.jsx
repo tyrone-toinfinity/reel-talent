@@ -1,15 +1,13 @@
 // CSS
 import "./Demo.css";
 // Components
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
+
 import { Calendly } from "../../components/Calendly";
 import { ContactForm } from "../../components/ContactForm";
 
 export const Demo = () => {
   return (
     <div>
-      <Navbar />{" "}
       <main className="demo__main">
         <div className="demo__container">
           <h2 className="demo__title">
@@ -46,7 +44,6 @@ export const Demo = () => {
         </div>
       </section>
       <ContactForm />
-      <SiteFooter />
     </div>
   );
 };

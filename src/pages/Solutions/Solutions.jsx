@@ -1,8 +1,5 @@
 // CSS
 import "./Solutions.css";
-// Components
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
 // Package
 import { Link } from "react-router-dom";
 import { FaUserCheck, FaChartBar, FaLightbulb } from "react-icons/fa";
@@ -12,8 +9,6 @@ import ctaLogo from "..//../assets/svg/AI-CTA.svg";
 export const Solutions = () => {
   return (
     <>
-      <Navbar />
-
       <section className="solutions">
         <section className="solutions__intro">
           <div class="tagline-container">
@@ -77,8 +72,6 @@ export const Solutions = () => {
           </div>
         </section>
       </section>
-
-      <SiteFooter />
     </>
   );
 };

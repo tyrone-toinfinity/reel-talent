@@ -1,8 +1,6 @@
 // CSS
 import "./Blog.css";
 // Components
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
 import { ErrorPage } from "../Error/ErrorPage";
 import { Loading } from "../../components/Loading";
 import { db } from "../../firebaseConfig";
@@ -46,7 +44,6 @@ export const Blog = () => {
   }
   return (
     <div>
-      <Navbar />
       {/* Blog Hero */}
       <section className="blog__main">
         <div className="blog__header">
@@ -114,7 +111,6 @@ export const Blog = () => {
           ))}
         </div>
       </section>
-      <SiteFooter />
     </div>
   );
 };

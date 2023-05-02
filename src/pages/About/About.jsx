@@ -1,8 +1,6 @@
 // CSS
 import "./About.css";
 // Components
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
 import { MeetTheTeam } from "../../components/MeetTheTeam";
 // Package
 // Assets
@@ -12,7 +10,6 @@ import Image3 from "../../assets/images/pexels-fauxels-3183172.jpg";
 export const About = () => {
   return (
     <>
-      <Navbar />
       <section className="about__page">
         <section className="about__section">
           <h1 className="about__title">
@@ -59,8 +56,6 @@ export const About = () => {
           </div>
         </section>
       </section>
-
-      <SiteFooter />
     </>
   );
 };
