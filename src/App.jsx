@@ -9,17 +9,18 @@ import { SiteFooter } from "./components/SiteFooter";
 import { Routes } from "react-router-dom";
 import React from "react";
 
-// Lazy load footer
 export const App = () => {
   return (
-    <ErrorBoundary>
-      <SEO />
-      <main>
-        <Navbar />
-        <Routes>{routes.map((route) => route.element)}</Routes>
-        <SiteFooter />
-      </main>
-      <ScrollToTop />
-    </ErrorBoundary>
+    <>
+      <Navbar />
+      <ErrorBoundary>
+        <SEO />
+        <main>
+          <Routes>{routes.map((route) => route.element)}</Routes>
+        </main>
+        <ScrollToTop />
+      </ErrorBoundary>
+      <SiteFooter />
+    </>
   );
 };
