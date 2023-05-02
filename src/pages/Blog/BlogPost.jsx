@@ -1,8 +1,6 @@
 import "./BlogPost.css";
 // Component
 import { Link, useLocation } from "react-router-dom";
-import { Navbar } from "../../components/Navbar";
-import { SiteFooter } from "../../components/SiteFooter";
 import { ErrorPage } from "../Error/ErrorPage";
 import { Loading } from "../../components/Loading";
 // Assets
@@ -44,7 +42,6 @@ export const BlogPost = () => {
 
   return (
     <div>
-      <Navbar />
       <section className="blogPost__main">
         <div className="blogPost_wrapper">
           <Link className="blogPost__back" to={"/blog"}>
@@ -107,7 +104,6 @@ export const BlogPost = () => {
           </div>
         </div>
       </section>
-      <SiteFooter />
     </div>
   );
 };

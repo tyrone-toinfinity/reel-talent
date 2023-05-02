@@ -17,5 +17,6 @@
   },
   "experiments": {
     "webframeworks": true
-  }
+  },
+  "headers": [{ "key": "Cache-Control", "value": "max-age=86400" }]
 }
