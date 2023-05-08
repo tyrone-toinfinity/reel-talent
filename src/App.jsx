@@ -11,7 +11,6 @@ import { useEffect } from "react";
 
 export const App = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   useEffect(() => {
     let title;
@@ -28,6 +27,9 @@ export const App = () => {
         break;
       case "/solutions":
         title = "Reel Talent Solutions: Empowering Your Recruitment Strategies";
+        break;
+      case "/legal":
+        title = "Legal - Reel Talent";
         break;
       case "/404":
         title = "Page Not Found - Reel Talent";
