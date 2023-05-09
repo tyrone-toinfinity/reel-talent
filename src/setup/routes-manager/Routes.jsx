@@ -41,11 +41,11 @@ export const routes = [
     element: <Route path="/solutions" element={<Solutions />} />,
   },
   {
-    path: "404",
+    path: "/404",
     element: <Route path="404" element={<ErrorPage />} />,
   },
   {
     path: "*",
-    element: <Route path="*" element={<Navigate to="404" />} />,
+    element: <Route path="/*" element={<Navigate to="/404" />} />,
   },
 ];
