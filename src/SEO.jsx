@@ -19,6 +19,10 @@ export const SEO = () => {
         name="services"
         content="External Recruiting, Job Placement, Talent Acquisition"
       />
+      <meta property="og:image" content="./assets/svg/reeltalent-logo.svg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Alternative text for the image" />
     </Helmet>
   );
 };
