@@ -6,11 +6,7 @@ import Shelly from "../assets/images/shelly_profile.jpg";
 export const MeetTheTeam = () => {
   const ShellyQuotes = [
     {
-      text: "I had the pleasure of working with Shelly previously, and we partnered together to help scale the company over the last year. Shelly is a very passionate individual who brings a unique perspective to recruiting! His empathy, expertise, and strong dedication to creating a seamless and unforgettable candidate experience is like no other. Shelly would make an incredible addition to any organization!",
-      author: "Fatima Vejzović",
-    },
-    {
-      text: "I met Shelly when I did a project for the company he was working at. After finishing that project, I asked him to help guide me through the phases of the job recruitment process. Shelly went above and beyond during this process to help me. In addition to helping me find a job, Shelly was a constant mentor to me. He never hesitated to share his insights with me and was a calming voice of reason many times. Along the way, I got to know Shelly -- he's an amazing human being who cares about the people he is trying help. It was always extremely easy to connect with Shelly. I never felt like I was talking to a recruiter; I always felt like I was talking to a friend. This all speaks to the fact that he has years of experience in his industry. He knows what he's talking about and he excels at connecting with people. I'm glad to call Shelly a friend and can't speak highly enough about him.",
+      text: "I met Shelly while working on a project for her company. Afterward, I asked her to guide me through the job recruitment process, and she went above and beyond to help me. Shelly was not only a mentor but also a calming voice of reason. She genuinely cares about people and is easy to connect with. Shelly's years of experience and expertise in the industry make her exceptional at what she does. I consider her a friend and highly recommend her.",
       author: "Shivaen Ahuja",
     },
   ];
@@ -34,12 +30,6 @@ export const MeetTheTeam = () => {
             {ShellyQuotes[0].text} <br />
             <span className="team-memeber__author">
               - {ShellyQuotes[0].author}
-            </span>
-          </p>
-          <p className="team-member__quote">
-            {ShellyQuotes[1].text} <br />
-            <span className="team-memeber__author">
-              - {ShellyQuotes[1].author}
             </span>
           </p>
         </div>
