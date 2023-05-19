@@ -58,10 +58,10 @@ export const Blog = () => {
               alt=""
             />
           </div>
-          <h4 className="blog__heading4">
+          <p className="blog__heading4">
             Stay informed with Reel Talent blog's latest industry news,
             including best hiring practices.
-          </h4>
+          </p>
         </div>
 
         {/* Cards */}

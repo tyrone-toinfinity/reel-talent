@@ -2,15 +2,15 @@
 import "./MeetTheTeam.css";
 // assets
 import bobby from "../assets/images/Bobby_profile.jpg";
-import nick from "../assets/images/Nick_profile.jpg";
+import Shelly from "../assets/images/shelly_profile.jpg";
 export const MeetTheTeam = () => {
-  const nickQuotes = [
+  const ShellyQuotes = [
     {
-      text: "I had the pleasure of working with Nick previously, and we partnered together to help scale the company over the last year. Nick is a very passionate individual who brings a unique perspective to recruiting! His empathy, expertise, and strong dedication to creating a seamless and unforgettable candidate experience is like no other. Nick would make an incredible addition to any organization!",
+      text: "I had the pleasure of working with Shelly previously, and we partnered together to help scale the company over the last year. Shelly is a very passionate individual who brings a unique perspective to recruiting! His empathy, expertise, and strong dedication to creating a seamless and unforgettable candidate experience is like no other. Shelly would make an incredible addition to any organization!",
       author: "Fatima Vejzović",
     },
     {
-      text: "I met Nick when I did a project for the company he was working at. After finishing that project, I asked him to help guide me through the phases of the job recruitment process. Nick went above and beyond during this process to help me. In addition to helping me find a job, Nick was a constant mentor to me. He never hesitated to share his insights with me and was a calming voice of reason many times. Along the way, I got to know Nick -- he's an amazing human being who cares about the people he is trying help. It was always extremely easy to connect with Nick. I never felt like I was talking to a recruiter; I always felt like I was talking to a friend. This all speaks to the fact that he has years of experience in his industry. He knows what he's talking about and he excels at connecting with people. I'm glad to call Nick a friend and can't speak highly enough about him.",
+      text: "I met Shelly when I did a project for the company he was working at. After finishing that project, I asked him to help guide me through the phases of the job recruitment process. Shelly went above and beyond during this process to help me. In addition to helping me find a job, Shelly was a constant mentor to me. He never hesitated to share his insights with me and was a calming voice of reason many times. Along the way, I got to know Shelly -- he's an amazing human being who cares about the people he is trying help. It was always extremely easy to connect with Shelly. I never felt like I was talking to a recruiter; I always felt like I was talking to a friend. This all speaks to the fact that he has years of experience in his industry. He knows what he's talking about and he excels at connecting with people. I'm glad to call Shelly a friend and can't speak highly enough about him.",
       author: "Shivaen Ahuja",
     },
   ];
@@ -23,19 +23,23 @@ export const MeetTheTeam = () => {
       <h2 className="meetTeamHeader">Meet the Team</h2>
       <div className="team">
         <div className="team-member">
-          <img src={nick} alt="Nick Starkey" className="team-member__image" />
-          <h3>Nick Starkey</h3>
+          <img
+            src={Shelly}
+            alt="Shelly Starkey"
+            className="team-member__image"
+          />
+          <h3>Shelly Starkey</h3>
           <p className="team-member__role">Our Head Recruiter</p>
           <p className="team-member__quote">
-            {nickQuotes[0].text} <br />
+            {ShellyQuotes[0].text} <br />
             <span className="team-memeber__author">
-              - {nickQuotes[0].author}
+              - {ShellyQuotes[0].author}
             </span>
           </p>
           <p className="team-member__quote">
-            {nickQuotes[1].text} <br />
+            {ShellyQuotes[1].text} <br />
             <span className="team-memeber__author">
-              - {nickQuotes[1].author}
+              - {ShellyQuotes[1].author}
             </span>
           </p>
         </div>
