@@ -4,7 +4,6 @@ import "./ContactForm.css";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { BsArrowUpRight } from "react-icons/bs";
 // Assets
 import dogImage from "../assets/images/dog-waiting.jpg";
 
@@ -24,11 +23,9 @@ export const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setShowThankYou(true);
         },
         (error) => {
-          console.log(error.text);
           setShowThankYou(true);
         }
       );
